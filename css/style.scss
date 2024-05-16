@@ -1,0 +1,67 @@
+//main settings
+@import 'general/general';
+@import 'general/fonts';
+@import 'general/viaribles';
+
+//main.html styles
+@import 'main/header';
+@import 'main/carousel';
+@import 'main/calendar';
+@import 'main/online';
+@import 'main/owl';
+@import 'main/form';
+@import 'main/footer';
+
+//buytickets.html/conference.html styles
+@import 'buytickets/image';
+@import 'buytickets/top';
+@import 'buytickets/about';
+@import 'buytickets/banner';
+@import 'buytickets/timetable';
+@import 'buytickets/experts';
+@import 'buytickets/delegat';
+@import 'buytickets/line';
+@import 'buytickets/form';
+@import 'buytickets/info-part';
+@import 'buytickets/data';
+@import 'buytickets/media-partner';
+@import 'buytickets/contact-us';
+@import 'buytickets/options';
+@import 'buytickets/i-m-partners';
+@import 'buytickets/translation';
+@import 'buytickets/sponsor';
+@import 'buytickets/programm';
+@import 'buytickets/support';
+
+//company.html styles
+@import 'company/main-img';
+@import 'company/offer';
+@import 'company/formats';
+@import 'company/tech';
+@import 'company/team';
+@import 'company/place';
+@import 'company/contacts';
+@import 'company/data';
+@import 'company/partners';
+
+//archive.html styles
+@import 'archive/archive';
+
+//tickets.html styles
+@import 'tickets/tickets';
+@import 'tickets/support';
+
+//partner.html styles
+@import 'partner/event';
+@import 'partner/form';
+@import 'partner/org';
+@import 'partner/sponsor';
+
+//registration.html styles
+@import 'registration/page-reg';
+@import 'registration/signin';
+@import 'registration/modal';
+
+//account.htnl styles
+@import 'account/profile';
+@import 'account/review';

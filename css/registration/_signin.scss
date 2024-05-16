@@ -1,0 +1,54 @@
+.active-form {
+  display: block;
+}
+.signin {
+  margin-top: 100px;
+  display: none;
+  &__form {
+    text-align: center;
+    &-title {
+      h2 {
+        color: $main-red;
+      }
+    }
+
+    &-input {
+      div {
+        padding-bottom: 20px;
+
+        input {
+          padding: 20px;
+          border: none;
+          border-bottom: 2px solid lightgray;
+          width: 30%;
+        }
+      }
+    }
+
+    &-btn {
+      text-align: center;
+      margin-top: 50px;
+      button {
+        border: none;
+        padding: 10px 45px 10px 45px;
+        border-radius: 10px;
+        color: white;
+        font-size: 1em;
+        background-color: $main-red;
+      }
+    }
+
+    &-reg {
+      margin-top: 20px;
+      button {
+        border: none;
+        background-color: white;
+        color: $main-red;
+        font-size: 1em;
+        text-decoration: underline;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}

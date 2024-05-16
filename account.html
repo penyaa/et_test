@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Event Today</title>
+  </head>
+  <body>
+    <header>
+      <section class="main">
+        <div class="main__logo">
+          <a href="index.html"><img src="assets/logo/logo.png" alt="logo" /></a>
+        </div>
+        <div class="main__links">
+          <ul class="">
+            <li><a href="index.html">Календарь</a></li>
+            <li><a href="tickets.html">Билеты</a></li>
+            <li><a href="company.html">О компании</a></li>
+            <li><a href="archive.html">Архив</a></li>
+            <li><a href="partner.html">Партнерам</a></li>
+          </ul>
+        </div>
+        <div class="main__reg">
+          <a href="registration.html"
+            ><img src="assets/icons/Vector.png" alt="pic"
+          /></a>
+        </div>
+
+        <div class="menu">
+          <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+          <label for="burger-checkbox" class="burger"></label>
+          <ul class="menu-list">
+            <li><a class="menu-item" href="index.html">Календарь</a></li>
+            <li><a class="menu-item" href="tickets.html">Билеты</a></li>
+            <li><a class="menu-item" href="company.html">О компании</a></li>
+            <li><a class="menu-item" href="archive.html">Архив</a></li>
+            <li><a class="menu-item" href="partner.html">Партнерам</a></li>
+          </ul>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="registration__form">
+              <div class="registration__form-title">
+                <h2>Регистрация</h2>
+              </div>
+              <form>
+                <div class="registration__form-input">
+                  <div>
+                    <input type="text" placeholder="Фамилия" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Имя" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Адрес электронной почты" />
+                  </div>
+                  <div class="registration__form-input-tel">
+                    <label for="reg-tel">Номер телефона</label>
+                    <input
+                      id="reg-tel"
+                      type="tel"
+                      placeholder="+7 777 777 77 77"
+                    />
+                  </div>
+                  <div class="signin__form-input-password">
+                    <input
+                      class="sign-password"
+                      type="password"
+                      placeholder="Пароль"
+                    />
+                  </div>
+                </div>
+                <div class="registration__form-btn">
+                  <button>Завершить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="profile">
+        <div class="profile__title">
+          <div class="profile__title-main">
+            <h2 class="profile-title">Мой профиль</h2>
+          </div>
+          <div class="profile__title-person">
+            <div class="profile__title-person-name">
+              <h4>
+                Иванов Иван Иванович
+                <p>email: ivanov@mail.ru</p>
+                <p>8 (999) 999-53-45</p>
+              </h4>
+            </div>
+            <div class="profile__title-person-avatar">
+              <img src="assets/icons/account.png" alt="icon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="profile__options">
+          <div class="profile__options-choice">
+            <div>
+              <img src="assets/icons/account3.png" alt="icon" />
+              <button class="profile-ticket">Мой билет</button>
+            </div>
+            <div>
+              <img src="assets/icons/account1.png" alt="icon" />
+              <button class="profile-event">Мои мероприятия</button>
+            </div>
+            <div>
+              <img src="assets/icons/account2.png" alt="icon" />
+              <button class="profile-FAQ">Вопросы и ответы</button>
+            </div>
+          </div>
+
+          <div class="profile__options-ticket">
+            <div class="profile__options-ticket-title">
+              <h3>Мой билет</h3>
+            </div>
+            <div class="profile__options-ticket-desc">
+              <p>
+                <span>Название:</span> Развитие отрасли беспилотной авиации
+                России
+              </p>
+              <p>
+                <span>Адрес:</span> Москва, Космодамианская наб., д. 52, стр. 6
+                l Swissotel Красные Холмы
+              </p>
+              <p><span>Дата и время:</span> 22 апреля 10:00</p>
+              <p><span>Тип билета:</span> Пакет "Делегат"</p>
+              <p><span>Номер билета:</span> 9348</p>
+            </div>
+          </div>
+
+          <div class="profile__options-event">
+            <div class="profile__options-event-item">
+              <div>
+                <img src="assets/other/date4.jpg" alt="other" />
+              </div>
+              <div class="profile__options-event-item-container">
+                <div class="profile__options-event-item-container-title">
+                  <p>
+                    Привлечение к субсидиарной ответственностипри банкротстве.
+                    Закон, тренды и практика
+                  </p>
+                </div>
+                <div class="profile__options-event-item-container-desc">
+                  <div>
+                    <p>II Ежегодная конференция</p>
+                    <p>15 декабря 2020 года</p>
+                  </div>
+                  <div>
+                    <button class="review-modal-btn">Оставить отзыв</button>
+                    <button>Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile__options-event-item">
+              <div>
+                <img src="assets/other/date4.jpg" alt="other" />
+              </div>
+              <div class="profile__options-event-item-container">
+                <div class="profile__options-event-item-container-title">
+                  <p>
+                    Привлечение к субсидиарной ответственностипри банкротстве.
+                    Закон, тренды и практика
+                  </p>
+                </div>
+                <div class="profile__options-event-item-container-desc">
+                  <div>
+                    <p>II Ежегодная конференция</p>
+                    <p>15 декабря 2020 года</p>
+                  </div>
+                  <div>
+                    <button>Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile__options-event-item">
+              <div>
+                <img src="assets/other/date4.jpg" alt="other" />
+              </div>
+              <div class="profile__options-event-item-container">
+                <div class="profile__options-event-item-container-title">
+                  <p>
+                    Привлечение к субсидиарной ответственностипри банкротстве.
+                    Закон, тренды и практика
+                  </p>
+                </div>
+                <div class="profile__options-event-item-container-desc">
+                  <div>
+                    <p>II Ежегодная конференция</p>
+                    <p>15 декабря 2020 года</p>
+                  </div>
+                  <div>
+                    <button>Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile__options-event-item">
+              <div>
+                <img src="assets/other/date4.jpg" alt="other" />
+              </div>
+              <div class="profile__options-event-item-container">
+                <div class="profile__options-event-item-container-title">
+                  <p>
+                    Привлечение к субсидиарной ответственностипри банкротстве.
+                    Закон, тренды и практика
+                  </p>
+                </div>
+                <div class="profile__options-event-item-container-desc">
+                  <div>
+                    <p>II Ежегодная конференция</p>
+                    <p>15 декабря 2020 года</p>
+                  </div>
+                  <div>
+                    <button>Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile__options-event-item">
+              <div>
+                <img src="assets/other/date4.jpg" alt="other" />
+              </div>
+              <div class="profile__options-event-item-container">
+                <div class="profile__options-event-item-container-title">
+                  <p>
+                    Привлечение к субсидиарной ответственностипри банкротстве.
+                    Закон, тренды и практика
+                  </p>
+                </div>
+                <div class="profile__options-event-item-container-desc">
+                  <div>
+                    <p>II Ежегодная конференция</p>
+                    <p>15 декабря 2020 года</p>
+                  </div>
+                  <div>
+                    <button>Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile__options-FAQ">
+            <h2>Раздел в стадии разработки</h2>
+          </div>
+        </div>
+
+        <div class="review__modal">
+          <div class="review__modal-container">
+            <span class="review__modal-container-close">&times;</span>
+
+            <div class="review__modal-container-content">
+              <div class="review__modal-container-content-title">
+                <h2 class="review-title">Напишите отзыв</h2>
+              </div>
+              <div class="review__modal-container-content-form">
+                <div class="review__modal-container-content-form-name">
+                  <input type="text" placeholder="Имя" />
+                </div>
+                <div class="rating-area">
+                  <input type="radio" id="star-5" name="rating" value="5" />
+                  <label for="star-5" title="Оценка «5»"></label>
+                  <input type="radio" id="star-4" name="rating" value="4" />
+                  <label for="star-4" title="Оценка «4»"></label>
+                  <input type="radio" id="star-3" name="rating" value="3" />
+                  <label for="star-3" title="Оценка «3»"></label>
+                  <input type="radio" id="star-2" name="rating" value="2" />
+                  <label for="star-2" title="Оценка «2»"></label>
+                  <input type="radio" id="star-1" name="rating" value="1" />
+                  <label for="star-1" title="Оценка «1»"></label>
+                </div>
+                <div class="review__modal-container-content-form-text">
+                  <textarea
+                    name="review-text"
+                    id="review-text"
+                    cols="30"
+                    rows="10"
+                    placeholder="Текст отзыва"
+                  ></textarea>
+                </div>
+
+                <div class="review__modal-container-content-form-btn">
+                  <button class="review-btn">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__container-1">
+          <div><img src="assets/logo/logo.png" alt="logo" /></div>
+          <div>
+            <div>
+              Профессиональная <br />организация конференций<br />
+              любой сложности в Москве.
+            </div>
+            <div>Социальные сети</div>
+            <div>
+              <a href="#"
+                ><img src="assets/icons/youtube.png" alt="youtube"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/telegram.png" alt="telegram"
+              /></a>
+              <a href="#"><img src="assets/icons/dzen.png" alt="yadzen" /></a>
+            </div>
+            <div>Реквизиты компании</div>
+            <div>ИП Лючина Татьяна Изосимовна</div>
+            <div>ИНН: 550305019040</div>
+            <div>ОГРН/ОГРНИП: 323554300023500</div>
+          </div>
+        </div>
+        <div class="footer__container-2">
+          <div>
+            <ul>
+              <li><a href="index.html">Календарь</a></li>
+              <li><a href="tickets.html">Билеты</a></li>
+              <li><a href="company.html">О компании</a></li>
+              <li><a href="archive.html">Архив</a></li>
+              <li><a href="partner.html">Партнерам</a></li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <h4>ПРОГРАММНАЯ ДИРЕКЦИЯ <br />ДЕЛОВЫХ ВСТРЕЧ</h4>
+              <p>
+                Екатерина Головченко<br />
+                eg@eventtoday.biz <br />
+                Тема письма: Выступление спикера <br />[тема мероприятия или
+                доклада]
+              </p>
+            </div>
+            <div>
+              <h4>ПО ВОПРОСАМ ПАРТНЕРСТВА И <br />РАЗМЕЩЕНИЯ СТЕНДОВ</h4>
+              <p>
+                +7 (951) 414-22-13 <br />
+                cc@eventtoday.biz <br />
+                Тема письма: Продвижение <br />компании [название вашей
+                <br />компании]
+              </p>
+            </div>
+            <div>
+              <h4>
+                ДЛЯ ИНФОРМАЦИОННЫХ<br />
+                СПОНСОРОВ И СМИ
+              </h4>
+              <p>
+                Светлана Барцева <br />
+                s.barceva@eventtoday.biz <br />
+                Тема письма: Информационная<br />
+                поддержка | Аккредитация СМИ <br />[название мероприятия]
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__container-end">
+        <div>© EventСегодня, 2024</div>
+        <div>
+          <a href="#">Оферта</a>
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Партнерские пакеты</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/account.js"></script>
+  </body>
+</html>

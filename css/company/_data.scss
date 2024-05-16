@@ -1,0 +1,58 @@
+.company-data {
+  &-title {
+    text-align: center;
+    margin-bottom: 80px;
+    h3 {
+      color: $main-red;
+    }
+  }
+
+  &-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .company-name-error,
+    .company-email-error,
+    .company-tel-error {
+      color: $main-red;
+      padding-top: 10px;
+      font-size: 0.5em;
+      width: 120px;
+    }
+
+    input {
+      padding: 10px;
+      border: 2px solid $main-red;
+      border-radius: 10px;
+    }
+    input::placeholder {
+      font-size: 0.8em;
+      font-family: 'IBX400', sans-serif;
+    }
+    button {
+      padding: 10px 20px 10px 20px;
+      background-color: $main-red;
+      border: none;
+      color: white;
+      border-radius: 25px;
+      font-size: 0.7em;
+      font-family: 'IBX400', Arial, Helvetica, sans-serif;
+    }
+  }
+
+  &-agree {
+    margin-top: 30px;
+    text-align: center;
+    p {
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .company-data {
+    display: none;
+  }
+}

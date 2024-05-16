@@ -1,0 +1,75 @@
+.buy__tickets-contact-us {
+  background-color: $main-red;
+  color: white;
+
+  &-1 {
+    margin-bottom: 30px;
+    margin-left: 20%;
+    p {
+      font-size: 0.7em;
+      width: 230px;
+      line-height: 1.7;
+    }
+  }
+  &-2 {
+    margin-left: 20%;
+    margin-bottom: 30px;
+    h4 {
+      font-size: 0.875em;
+    }
+  }
+
+  &-3,
+  &-4 {
+    margin-left: 20%;
+    p {
+      margin-top: -15px;
+      font-size: 0.7em;
+      a {
+        color: white;
+        text-decoration: underline;
+        font-weight: 100;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .buy__tickets-contact-us {
+    background-color: $main-red;
+    color: white;
+
+    &-1 {
+      margin-bottom: 30px;
+      margin-left: 0;
+      p {
+        font-size: 0.7em;
+        width: 230px;
+        line-height: 1.7;
+      }
+    }
+    &-2 {
+      margin-left: 0;
+      margin-bottom: 30px;
+      h4 {
+        font-size: 0.875em;
+      }
+    }
+
+    &-3,
+    &-4 {
+      margin-left: 0;
+      p {
+        margin-top: -15px;
+        font-size: 0.7em;
+        a {
+          color: white;
+          text-decoration: underline;
+          font-weight: 100;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

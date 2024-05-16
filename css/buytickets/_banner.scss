@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'IBX';
+  src: url('../assets/fonts/IBMPlexSerif-SemiBold.ttf');
+}
+
+.buy__tickets-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../assets/banner/banner-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  flex-wrap: wrap;
+
+  &-logo {
+    img {
+      width: 100px;
+    }
+  }
+
+  &-title {
+    font-size: 0.8em;
+    letter-spacing: 1.5px;
+  }
+
+  &-text {
+    font-size: 0.6em;
+    line-height: 2px;
+
+    p:last-child {
+      margin-top: 20px;
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+
+  &-time {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    .timer__items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .timer__item {
+        position: relative;
+        font-family: 'IBX', sans-serif;
+        color: $timer;
+        font-size: 3em;
+        border-right: 1.5px solid rgba($color: #525151, $alpha: 0.7);
+        padding: 20px;
+      }
+      .timer__item:last-child {
+        border-right: none;
+      }
+
+      .timer__item::before {
+        content: attr(data-title);
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 45%;
+        bottom: 0;
+        transform: translateX(-50%);
+        font-size: 14px;
+        font-family: 'IBX', sans-serif;
+      }
+
+      .timer__item:not(:last-child)::after {
+        position: absolute;
+        right: -15px;
+      }
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    button {
+      width: 150px;
+      padding: 10px;
+      border-radius: 25px;
+      border: none;
+      font-family: 'IBX', sans-serif;
+      font-size: 0.7em;
+    }
+
+    button:first-child {
+      background-color: $main-red;
+      a {
+        color: white;
+        text-transform: uppercase;
+        font-family: 'IBX', Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  @font-face {
+    font-family: 'IBX';
+    src: url('../assets/fonts/IBMPlexSerif-SemiBold.ttf');
+  }
+
+  .buy__tickets-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url('../assets/banner/banner-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+
+    &-logo {
+      img {
+        width: 100px;
+      }
+    }
+
+    &-title {
+      font-size: 0.7em;
+      letter-spacing: 1.5px;
+    }
+
+    &-text {
+      font-size: 0.6em;
+      line-height: 10px;
+
+      p:last-child {
+        margin-top: 20px;
+        font-style: italic;
+        font-weight: 600;
+      }
+    }
+
+    &-time {
+      margin-top: 30px;
+      margin-bottom: 60px;
+      .timer__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .timer__item {
+          position: relative;
+          font-family: 'IBX', sans-serif;
+          color: $timer;
+          font-size: 2.2em;
+          border-right: 1.5px solid rgba($color: #525151, $alpha: 0.7);
+          padding: 10px;
+        }
+        .timer__item:last-child {
+          border-right: none;
+        }
+
+        .timer__item::before {
+          content: attr(data-title);
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: 45%;
+          bottom: 0;
+          transform: translateX(-50%);
+          font-size: 0.3em;
+          font-family: 'IBX', sans-serif;
+        }
+
+        .timer__item:not(:last-child)::after {
+          position: absolute;
+          right: -15px;
+        }
+      }
+    }
+
+    &-btn {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      button {
+        width: 100px;
+        padding: 10px;
+        border-radius: 25px;
+        border: none;
+        font-family: 'IBX', Arial, Helvetica, sans-serif;
+        font-size: 0.7em;
+      }
+
+      button:first-child {
+        background-color: $main-red;
+        a {
+          color: white;
+          text-transform: uppercase;
+          font-family: 'IBX', Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+  }
+}

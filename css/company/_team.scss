@@ -1,0 +1,75 @@
+.company__team {
+  &-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+    &-item {
+      text-align: center;
+      img {
+        width: 180px;
+      }
+      p {
+        margin-top: -10px;
+        color: $main-red;
+      }
+    }
+  }
+}
+
+#carouselTen {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .company__team {
+    &-title {
+      text-align: center;
+    }
+    &-container {
+      display: none;
+    }
+  }
+
+  #carouselTen {
+    display: block;
+    text-align: center;
+    .item {
+      background-color: lightgrey;
+      padding: 20px;
+      border-radius: 15px;
+      height: 300px;
+      display: grid;
+      place-items: center;
+      img {
+        width: 150px;
+      }
+      h4 {
+        margin-top: -10%;
+      }
+      p {
+        color: $main-red;
+        margin-top: -20%;
+      }
+    }
+
+    .owl-prev,
+    .owl-next {
+      span {
+        background-color: $text;
+        padding: 0px 15px 4px 15px;
+        font-size: 2em;
+        border-radius: 50px;
+        color: white;
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      right: 0;
+      bottom: 2%;
+      left: 60%;
+    }
+  }
+}

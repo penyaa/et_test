@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'IBX400';
+  src: url('../assets/fonts/IBMPlexSerif-Light.ttf');
+}
+
+@font-face {
+  font-family: 'IBX600';
+  src: url('../assets/fonts/IBMPlexSerif-SemiBold.ttf');
+}
+
+.buy__tickets-experts {
+  margin-top: 30px;
+  &-title {
+    margin-bottom: 80px;
+    text-align: center;
+    color: $main-red;
+  }
+  &-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+
+    .column {
+      text-align: center;
+
+      img {
+        width: 50%;
+      }
+
+      .color-red {
+        color: $main-red;
+        margin-top: -10px;
+        font-size: 0.7em;
+      }
+      p {
+        width: 100%;
+        text-wrap: wrap;
+        font-family: 'IBX400', sans-serif;
+        font-size: 0.7em;
+        span {
+          font-family: 'IBX600', sans-serif;
+        }
+      }
+
+      div:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &-7 {
+      grid-column: 1;
+    }
+
+    &-8 {
+      grid-column: 3;
+    }
+  }
+}
+
+.buy__tickets-experts-mob {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .buy__tickets-experts {
+    display: none;
+  }
+
+  .buy__tickets-experts-mob {
+    display: block;
+    text-align: center;
+    div {
+      display: block;
+      img:first-child {
+        width: 100%;
+      }
+
+      .color-red {
+        color: $main-red;
+        margin-top: -10px;
+        font-size: 0.7em;
+      }
+      p {
+        text-wrap: wrap;
+        font-family: 'IBX400', sans-serif;
+        font-size: 0.7em;
+        span {
+          font-family: 'IBX600', sans-serif;
+        }
+      }
+
+      .image {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        align-items: center;
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  #carouselFive {
+    .item {
+      img {
+        border-radius: 15px;
+        height: 350px;
+      }
+    }
+
+    .owl-prev,
+    .owl-next {
+      span {
+        background-color: $main-red;
+        padding: 0px 15px 4px 15px;
+        font-size: 2em;
+        border-radius: 50px;
+        color: white;
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      bottom: 0;
+      left: 60%;
+    }
+  }
+}

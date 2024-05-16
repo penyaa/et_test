@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Event Today</title>
+  </head>
+
+  <body>
+    <header>
+      <section class="main">
+        <div class="main__logo">
+          <a href="index.html"><img src="assets/logo/logo.png" alt="logo" /></a>
+        </div>
+        <div class="main__links">
+          <ul class="">
+            <li><a href="index.html">Календарь</a></li>
+            <li><a href="tickets.html">Билеты</a></li>
+            <li><a href="company.html">О компании</a></li>
+            <li><a href="archive.html">Архив</a></li>
+            <li><a href="partner.html">Партнерам</a></li>
+          </ul>
+        </div>
+        <div class="main__reg">
+          <button id="myBtn">Регистрация</button>
+          <a href="registration.html" 
+            ><img src="assets/icons/Vector.png" alt="pic"
+          /></a>
+        </div>
+
+        <div class="menu">
+          <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+          <label for="burger-checkbox" class="burger"></label>
+          <ul class="menu-list">
+            <li><a class="menu-item" href="index.html">Календарь</a></li>
+            <li><a class="menu-item" href="tickets.html">Билеты</a></li>
+            <li><a class="menu-item" href="company.html">О компании</a></li>
+            <li><a class="menu-item" href="archive.html">Архив</a></li>
+            <li><a class="menu-item" href="partner.html">Партнерам</a></li>
+          </ul>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="registration__form">
+              <div class="registration__form-title">
+                <h2>Регистрация</h2>
+              </div>
+              <form>
+                <div class="registration__form-input">
+                  <div>
+                    <input type="text" placeholder="Фамилия" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Имя" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Адрес электронной почты" />
+                  </div>
+                  <div class="registration__form-input-tel">
+                    <label for="reg-tel">Номер телефона</label>
+                    <input
+                      id="reg-tel"
+                      type="tel"
+                      placeholder="+7 777 777 77 77"
+                    />
+                  </div>
+                  <div class="signin__form-input-password">
+                    <input
+                      class="sign-password"
+                      type="password"
+                      placeholder="Пароль"
+                    />
+                  </div>
+                </div>
+                <div class="registration__form-btn">
+                  <button>Завершить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="registration">
+        <div class="registration__form">
+          <div class="registration__form-title">
+            <h2>Регистрация</h2>
+          </div>
+          <form>
+            <div class="registration__form-input">
+              <div>
+                <input type="text" placeholder="Фамилия" />
+              </div>
+              <div>
+                <input type="text" placeholder="Имя" />
+              </div>
+              <div>
+                <input type="text" placeholder="Адрес электронной почты" />
+              </div>
+              <div class="registration__form-input-tel">
+                <label for="reg-tel">Номер телефона</label>
+                <input id="reg-tel" type="tel" placeholder="+7 777 777 77 77" />
+              </div>
+              <div class="signin__form-input-password">
+                <input
+                  class="sign-password"
+                  type="password"
+                  placeholder="Пароль"
+                />
+              </div>
+            </div>
+            <div class="registration__form-btn">
+              <button>Завершить</button>
+            </div>
+          </form>
+          <div class="registration__form-signin">
+            <p>
+              Уже зарегистрированы?
+              <button class="registration__form-signin-btn">Войти</button>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="signin">
+        <div class="signin__form">
+          <div class="signin__form-title">
+            <h2>Войти в личный кабинет</h2>
+          </div>
+          <form class="sign-in">
+            <div class="signin__form-input">
+              <div class="signin__form-input-email">
+                <input class="sign-name" type="text" placeholder="Адрес электронной почты" />
+              </div>
+              <div class="signin__form-input-password">
+                <input
+                  class="sign-password"
+                  type="password"
+                  placeholder="Пароль"
+                />
+              </div>
+            </div>
+            <div class="signin__form-btn">
+              <button class="signin-btn">Войти</button>
+            </div>
+          </form>
+          <div class="signin__form-reg">
+            <button class="signin__form-reg-btn">Зарегистрироваться</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__container">
+        <div class="footer__container-1">
+          <div><img src="assets/logo/logo.png" alt="logo" /></div>
+          <div>
+            <div>
+              Профессиональная <br />организация конференций<br />
+              любой сложности в Москве.
+            </div>
+            <div>Социальные сети</div>
+            <div>
+              <a href="#"
+                ><img src="assets/icons/youtube.png" alt="youtube"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/telegram.png" alt="telegram"
+              /></a>
+              <a href="#"><img src="assets/icons/dzen.png" alt="yadzen" /></a>
+            </div>
+            <div>Реквизиты компании</div>
+            <div>ИП Лючина Татьяна Изосимовна</div>
+            <div>ИНН: 550305019040</div>
+            <div>ОГРН/ОГРНИП: 323554300023500</div>
+          </div>
+        </div>
+        <div class="footer__container-2">
+          <div>
+            <ul>
+              <li><a href="index.html">Календарь</a></li>
+              <li><a href="tickets.html">Билеты</a></li>
+              <li><a href="company.html">О компании</a></li>
+              <li><a href="archive.html">Архив</a></li>
+              <li><a href="partner.html">Партнерам</a></li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <h4>ПРОГРАММНАЯ ДИРЕКЦИЯ <br />ДЕЛОВЫХ ВСТРЕЧ</h4>
+              <p>
+                Екатерина Головченко<br />
+                eg@eventtoday.biz <br />
+                Тема письма: Выступление спикера <br />[тема мероприятия или
+                доклада]
+              </p>
+            </div>
+            <div>
+              <h4>ПО ВОПРОСАМ ПАРТНЕРСТВА И <br />РАЗМЕЩЕНИЯ СТЕНДОВ</h4>
+              <p>
+                +7 (951) 414-22-13 <br />
+                cc@eventtoday.biz <br />
+                Тема письма: Продвижение <br />компании [название вашей
+                <br />компании]
+              </p>
+            </div>
+            <div>
+              <h4>
+                ДЛЯ ИНФОРМАЦИОННЫХ<br />
+                СПОНСОРОВ И СМИ
+              </h4>
+              <p>
+                Светлана Барцева <br />
+                s.barceva@eventtoday.biz <br />
+                Тема письма: Информационная<br />
+                поддержка | Аккредитация СМИ <br />[название мероприятия]
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__container-end">
+        <div>© EventСегодня, 2024</div>
+        <div>
+          <a href="#">Оферта</a>
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Партнерские пакеты</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/reg.js"></script>
+  </body>
+</html>

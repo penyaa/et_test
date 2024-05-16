@@ -1,0 +1,143 @@
+.tickets__support {
+  &-title {
+    text-align: center;
+    margin-bottom: 50px;
+    h2 {
+      color: $main-red;
+    }
+  }
+
+  &-container-1 {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 30%;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 10px;
+
+      p {
+        width: 50%;
+        font-size: 0.7em;
+        line-height: 1.8;
+        color: $footer;
+      }
+    }
+  }
+
+  &-container-2 {
+    display: flex;
+    align-items: center;
+    img {
+      width: 20%;
+    }
+
+    img:first-child {
+      width: 10%;
+      margin-top: -25px;
+    }
+    img:last-child {
+      rotate: 180deg;
+    }
+  }
+
+  &-container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img:first-child {
+      rotate: 180deg;
+      width: 30%;
+    }
+
+    img:nth-child(2) {
+      width: 20%;
+      margin-right: 20px;
+    }
+
+    img:last-child {
+      width: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tickets__support {
+    &-title {
+      text-align: center;
+      margin-bottom: 0;
+      h2 {
+        font-size: 1.1em;
+        color: $main-red;
+      }
+    }
+
+    &-container-1 {
+      display: block;
+
+      img {
+        width: 30%;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        p {
+          text-align: center;
+          width: 100%;
+          font-size: 0.7em;
+          line-height: 1.8;
+          color: $footer;
+        }
+      }
+    }
+
+    &-container-2 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      place-items: center;
+      flex-wrap: wrap;
+      img {
+        width: 100%;
+      }
+
+      img:first-child {
+        width: 70%;
+        margin-top: 0;
+      }
+      img:last-child {
+        rotate: 180deg;
+      }
+    }
+
+    &-container-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      place-items: center;
+
+      img:first-child {
+        rotate: 180deg;
+        width: 100%;
+      }
+
+      img:nth-child(2) {
+        width: 100%;
+        margin-right: 20px;
+      }
+
+      img:last-child {
+        width: 100%;
+      }
+    }
+  }
+}

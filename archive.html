@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Event Today</title>
+  </head>
+  <body>
+    <header>
+      <section class="main">
+        <div class="main__logo">
+          <a href="index.html"><img src="assets/logo/logo.png" alt="logo" /></a>
+        </div>
+        <div class="main__links">
+          <ul class="">
+            <li><a href="index.html">Календарь</a></li>
+            <li><a href="tickets.html">Билеты</a></li>
+            <li><a href="company.html">О компании</a></li>
+            <li><a class="selected" href="archive.html">Архив</a></li>
+            <li><a href="partner.html">Партнерам</a></li>
+          </ul>
+        </div>
+        <div class="main__reg">
+          <button id="myBtn">Регистрация</button>
+          <a href="registration.html"
+            ><img src="assets/icons/Vector.png" alt="pic"
+          /></a>
+        </div>
+
+        <div class="menu">
+          <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+          <label for="burger-checkbox" class="burger"></label>
+          <ul class="menu-list">
+            <li><a class="menu-item" href="index.html">Календарь</a></li>
+            <li><a class="menu-item" href="tickets.html">Билеты</a></li>
+            <li><a class="menu-item" href="company.html">О компании</a></li>
+            <li><a class="menu-item" href="archive.html">Архив</a></li>
+            <li><a class="menu-item" href="partner.html">Партнерам</a></li>
+          </ul>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="registration__form">
+              <div class="registration__form-title">
+                <h2>Регистрация</h2>
+              </div>
+              <form>
+                <div class="registration__form-input">
+                  <div>
+                    <input type="text" placeholder="Фамилия" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Имя" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Адрес электронной почты" />
+                  </div>
+                  <div class="registration__form-input-tel">
+                    <label for="reg-tel">Номер телефона</label>
+                    <input
+                      id="reg-tel"
+                      type="tel"
+                      placeholder="+7 777 777 77 77"
+                    />
+                  </div>
+                  <div class="signin__form-input-password">
+                    <input
+                      class="sign-password"
+                      type="password"
+                      placeholder="Пароль"
+                    />
+                  </div>
+                </div>
+                <div class="registration__form-btn">
+                  <button>Завершить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="archive">
+        <div class="archive__title">
+          <h2>Архив прошедших конференций</h2>
+        </div>
+        <div class="archive__2023-title">
+          <p>2023 год</p>
+        </div>
+        <div class="archive__2023">
+          <div class="archive__2023-links">
+            <ul>
+              <li><a href="#">цифра мед</a></li>
+              <li><a href="#">цифра жкх</a></li>
+              <li><a href="#">споры</a></li>
+              <li><a href="#">активы банка</a></li>
+              <li><a href="#">кибер без</a></li>
+              <li><a href="#">налоги</a></li>
+              <li><a href="#">семейное и наследственное право</a></li>
+              <li><a href="#">цифра транспорт</a></li>
+              <li><a href="#">экосистемы</a></li>
+              <li><a href="#">практика банкротства</a></li>
+              <li><a href="#">залоги</a></li>
+              <li><a href="#">кадры</a></li>
+              <li><a href="#">цифрововой девелопмент</a></li>
+              <li><a href="#">риски</a></li>
+            </ul>
+          </div>
+          <div class="archive__2023-links-mob">
+            <div class="mob-title">ЦИФРА МЕД</div>
+            <div class="select-dropdown select-dropdown1">
+              <span
+                ><img src="assets/icons/selector-archive.png" alt="icon"
+              /></span>
+              <div
+                id="selectDropdown1"
+                class="select-dropdown-content select-dropdown-content1"
+              >
+                <a href="#">цифра мед</a>
+                <a href="#">цифра жкх</a>
+                <a href="#">споры</a>
+                <a href="#">активы банка</a>
+                <a href="#">кибер без</a>
+                <a href="#">налоги</a>
+                <a href="#">семейное и наследственное право</a>
+                <a href="#">цифра транспорт</a>
+                <a href="#">экосистемы</a>
+                <a href="#">практика банкротства</a>
+                <a href="#">залоги</a>
+                <a href="#">кадры</a>
+                <a href="#">цифрововой девелопмент</a>
+                <a href="#">риски</a>
+              </div>
+            </div>
+          </div>
+          <div class="archive__2023-container">
+            <div class="archive__2023-container-1">
+              <div class="archive__2023-container-1-img">
+                <img src="assets/other/archive1.jpg" alt="archive" />
+              </div>
+              <div class="archive__2023-container-1-text">
+                <p>Цифровая медицина 23</p>
+                <p>
+                  Ежегодный бизнес-форум<br />
+                  23 ноября 2022 года
+                </p>
+              </div>
+            </div>
+            <div class="archive__2023-container-2">
+              <button><a href="conference.html">Подробнее</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="archive__2022-title">
+          <p>2022 год</p>
+        </div>
+        <div class="archive__2022">
+          <div class="archive__2022-links">
+            <ul>
+              <li><a href="#">активы</a></li>
+              <li><a href="#">цифровой девелопмент</a></li>
+              <li><a href="#">умный город</a></li>
+              <li><a href="#">бизнес-риски</a></li>
+              <li><a href="#">персональные данные</a></li>
+              <li><a href="#">цфа</a></li>
+              <li><a href="#">телемед</a></li>
+              <li><a href="#">цифра транспорт</a></li>
+              <li><a href="#">цифра мед</a></li>
+              <li><a href="#">практика банкротства</a></li>
+              <li><a href="#">бизнес-риски</a></li>
+            </ul>
+          </div>
+          <div class="archive__2023-links-mob">
+            <div class="mob-title">АКТИВЫ</div>
+            <div class="select-dropdown select-dropdown2">
+              <span
+                ><img src="assets/icons/selector-archive.png" alt="icon"
+              /></span>
+              <div
+                id="selectDropdown2"
+                class="select-dropdown-content select-dropdown-content2"
+              >
+                <a href="#">активы</a>
+                <a href="#">цифровой девелопмент</a>
+                <a href="#">умный город</a>
+                <a href="#">бизнес-риски</a>
+                <a href="#">персональные данные</a>
+                <a href="#">цфа</a>
+                <a href="#">телемед</a>
+                <a href="#">цифра транспорт</a>
+                <a href="#">цифра мед</a>
+                <a href="#">практика банкротства</a>
+                <a href="#">бизнес-риски</a>
+              </div>
+            </div>
+          </div>
+          <div class="archive__2022-container">
+            <div class="archive__2022-container-1">
+              <div class="archive__2022-container-1-img">
+                <img src="assets/other/archive2.jpg" alt="archive" />
+              </div>
+              <div class="archive__2022-container-1-text">
+                <p>Практика управления проблемными и непрофильными активами</p>
+                <p>
+                  Ежегодный бизнес-форум<br />
+                  23 ноября 2022 года
+                </p>
+              </div>
+            </div>
+            <div class="archive__2022-container-2">
+              <button><a href="conference.html">Подробнее</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="archive__2021-title">
+          <p>2021 год</p>
+        </div>
+        <div class="archive__2021">
+          <div class="archive__2021-links">
+            <ul>
+              <li><a href="#">цифровизация транспорта</a></li>
+              <li><a href="#">бизнес-риски</a></li>
+              <li><a href="#">налоговый контроль</a></li>
+              <li><a href="#">возврат активов</a></li>
+              <li><a href="#">трудовое право</a></li>
+              <li><a href="#">практика банкротства</a></li>
+            </ul>
+          </div>
+          <div class="archive__2023-links-mob">
+            <div class="mob-title">ЦИФРОВИЗАЦИЯ ТРАНСПОРТА</div>
+            <div class="select-dropdown select-dropdown3">
+              <span
+                ><img src="assets/icons/selector-archive.png" alt="icon"
+              /></span>
+              <div
+                id="selectDropdown3"
+                class="select-dropdown-content select-dropdown-content3"
+              >
+                <a href="#">цифровизация транспорта</a>
+                <a href="#">бизнес-риски</a>
+                <a href="#">налоговый контроль</a>
+                <a href="#">возврат активов</a>
+                <a href="#">трудовое право</a>
+                <a href="#">практика банкротства</a>
+              </div>
+            </div>
+          </div>
+          <div class="archive__2021-container">
+            <div class="archive__2021-container-1">
+              <div class="archive__2021-container-1-img">
+                <img src="assets/other/archive3.jpg" alt="archive" />
+              </div>
+              <div class="archive__2021-container-1-text">
+                <p>
+                  Цифровизация транспорта 2021. Процесс трансформации: оценка и
+                  перспективы
+                </p>
+                <p>
+                  Конференция<br />
+                  21 сентября 2021 года
+                </p>
+              </div>
+            </div>
+            <div class="archive__2021-container-2">
+              <button><a href="conference.html">Подробнее</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="archive__2020-title">
+          <p>2020 год</p>
+        </div>
+        <div class="archive__2020">
+          <div class="archive__2020-links">
+            <ul>
+              <li><a href="#">субсидиарная ответственность</a></li>
+              <li><a href="#">практика банкротства</a></li>
+            </ul>
+          </div>
+          <div class="archive__2023-links-mob">
+            <div class="mob-title">СУБСИДИРОВАННАЯ ОТВЕТСТВЕННОСТЬ</div>
+            <div class="select-dropdown select-dropdown4">
+              <span
+                ><img src="assets/icons/selector-archive.png" alt="icon"
+              /></span>
+              <div
+                id="selectDropdown4"
+                class="select-dropdown-content select-dropdown-content4"
+              >
+                <a value="cубсидиарная ответственность" href="#"
+                  >субсидиарная ответственность</a
+                >
+                <a value="практика банкротства" href="#"
+                  >практика банкротства</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="archive__2020-container">
+            <div class="archive__2020-container-1">
+              <div class="archive__2020-container-1-img">
+                <img src="assets/other/archive4.jpg" alt="archive" />
+              </div>
+              <div class="archive__2020-container-1-text">
+                <p>
+                  Привлечение к субсидиарной ответственности при банкротстве.
+                  Закон, тренды и практика
+                </p>
+                <p>
+                  II Ежегодная конференция<br />
+                  15 декабря 2020 года
+                </p>
+              </div>
+            </div>
+            <div class="archive__2020-container-2">
+              <button><a href="conference.html">Подробнее</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__container-1">
+          <div><img src="assets/logo/logo.png" alt="logo" /></div>
+          <div>
+            <div>
+              Профессиональная <br />организация конференций<br />
+              любой сложности в Москве.
+            </div>
+            <div>Социальные сети</div>
+            <div>
+              <a href="#"
+                ><img src="assets/icons/youtube.png" alt="youtube"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/telegram.png" alt="telegram"
+              /></a>
+              <a href="#"><img src="assets/icons/dzen.png" alt="yadzen" /></a>
+            </div>
+            <div>Реквизиты компании</div>
+            <div>ИП Лючина Татьяна Изосимовна</div>
+            <div>ИНН: 550305019040</div>
+            <div>ОГРН/ОГРНИП: 323554300023500</div>
+          </div>
+        </div>
+        <div class="footer__container-2">
+          <div>
+            <ul>
+              <li><a href="index.html">Календарь</a></li>
+              <li><a href="tickets.html">Билеты</a></li>
+              <li><a href="company.html">О компании</a></li>
+              <li><a href="archive.html">Архив</a></li>
+              <li><a href="partner.html">Партнерам</a></li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <h4>ПРОГРАММНАЯ ДИРЕКЦИЯ <br />ДЕЛОВЫХ ВСТРЕЧ</h4>
+              <p>
+                Екатерина Головченко<br />
+                eg@eventtoday.biz <br />
+                Тема письма: Выступление спикера <br />[тема мероприятия или
+                доклада]
+              </p>
+            </div>
+            <div>
+              <h4>ПО ВОПРОСАМ ПАРТНЕРСТВА И <br />РАЗМЕЩЕНИЯ СТЕНДОВ</h4>
+              <p>
+                +7 (951) 414-22-13 <br />
+                cc@eventtoday.biz <br />
+                Тема письма: Продвижение <br />компании [название вашей
+                <br />компании]
+              </p>
+            </div>
+            <div>
+              <h4>
+                ДЛЯ ИНФОРМАЦИОННЫХ<br />
+                СПОНСОРОВ И СМИ
+              </h4>
+              <p>
+                Светлана Барцева <br />
+                s.barceva@eventtoday.biz <br />
+                Тема письма: Информационная<br />
+                поддержка | Аккредитация СМИ <br />[название мероприятия]
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__container-end">
+        <div>© EventСегодня, 2024</div>
+        <div>
+          <a href="#">Оферта</a>
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Партнерские пакеты</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/archive.js"></script>
+  </body>
+</html>

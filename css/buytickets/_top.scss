@@ -1,0 +1,111 @@
+.buy__tickets-top {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &-title {
+    h2 {
+      color: $main-red;
+    }
+    div {
+      padding-bottom: 20px;
+      p:first-child {
+        text-transform: uppercase;
+        color: $footer;
+        padding-top: 20px;
+        font-weight: 600;
+        font-size: 0.875em;
+      }
+      p:last-child {
+        font-size: 0.875em;
+        color: $footer;
+        margin-top: -10px;
+        font-weight: 600;
+      }
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      background-color: $main-red;
+      border-radius: 25px;
+      a {
+        color: white;
+        font-weight: 400;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  &-text {
+    width: 50%;
+    span {
+      color: $main-red;
+    }
+  }
+}
+
+.buy__tickets-top-mob {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .buy__tickets-top {
+    display: none;
+  }
+  .buy__tickets-top-mob {
+    margin-top: 30px;
+    display: block;
+
+    &-title {
+      h2 {
+        text-align: center;
+        color: $main-red;
+        font-size: 1em;
+      }
+    }
+
+    &-text {
+      width: 100%;
+      p {
+        color: black;
+      }
+      span {
+        color: $main-red;
+      }
+    }
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-item1 {
+        p:first-child {
+          text-transform: uppercase;
+          color: $footer;
+          font-weight: 600;
+          font-size: 0.875em;
+        }
+        p:last-child {
+          font-size: 0.875em;
+          color: $footer;
+          margin-top: -10px;
+          font-weight: 600;
+        }
+      }
+
+      button {
+        padding: 10px;
+        border: none;
+        background-color: $main-red;
+        border-radius: 25px;
+        a {
+          color: white;
+          font-size: 0.875em;
+        }
+      }
+    }
+  }
+}

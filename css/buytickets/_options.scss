@@ -1,0 +1,84 @@
+.buy__tickets-options {
+  &-title {
+    text-align: center;
+    h3 {
+      color: $main-red;
+      font-weight: 400;
+      letter-spacing: 0.8px;
+    }
+  }
+
+  &-table {
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+      width: 100%;
+      border: 2px solid rgba($color: #565656, $alpha: 0.3);
+
+      .table-1 {
+        td {
+          vertical-align: middle;
+          text-align: center;
+          font-family: 'IBX400', Arial, Helvetica, sans-serif;
+          font-size: 0.7em;
+          padding: 30px;
+          text-transform: uppercase;
+        }
+
+        td:first-child {
+          text-align: left;
+          padding-left: 10px;
+        }
+      }
+      .table-all {
+        td {
+          vertical-align: middle;
+          padding: 30px;
+          text-align: center;
+          font-family: 'IBX400', Arial, Helvetica, sans-serif;
+          font-size: 0.7em;
+
+          img {
+            width: 20px;
+          }
+        }
+        td:first-child {
+          width: 150px;
+          text-align: left;
+          padding-left: 10px;
+        }
+      }
+      .table-3 {
+        td {
+          vertical-align: middle;
+          text-align: center;
+          padding: 20px;
+
+          button {
+            border: none;
+            padding: 10px 20px 10px 20px;
+            border-radius: 25px;
+            background-color: $main-red;
+
+            a {
+              font-family: 'IBX400', Arial, Helvetica, sans-serif;
+              color: white;
+              font-size: 0.7em;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+
+      td {
+        border: 1px solid rgba($color: #565656, $alpha: 0.3);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .buy__tickets-options {
+    display: none;
+  }
+}

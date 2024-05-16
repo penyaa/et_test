@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Event Today</title>
+  </head>
+  <body>
+    <header>
+      <section class="main">
+        <div class="main__logo">
+          <a href="index.html"><img src="assets/logo/logo.png" alt="logo" /></a>
+        </div>
+        <div class="main__links">
+          <ul class="">
+            <li><a class="selected" href="index.html">Календарь</a></li>
+            <li><a href="tickets.html">Билеты</a></li>
+            <li><a href="company.html">О компании</a></li>
+            <li><a href="archive.html">Архив</a></li>
+            <li><a href="partner.html">Партнерам</a></li>
+          </ul>
+        </div>
+        <div class="main__reg">
+          <button id="myBtn">Регистрация</button>
+          <a href="registration.html"
+            ><img src="assets/icons/Vector.png" alt="pic"
+          /></a>
+        </div>
+
+        <div class="menu">
+          <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+          <label for="burger-checkbox" class="burger"></label>
+          <ul class="menu-list">
+            <li><a class="menu-item" href="index.html">Календарь</a></li>
+            <li><a class="menu-item" href="tickets.html">Билеты</a></li>
+            <li><a class="menu-item" href="company.html">О компании</a></li>
+            <li><a class="menu-item" href="archive.html">Архив</a></li>
+            <li><a class="menu-item" href="partner.html">Партнерам</a></li>
+          </ul>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="registration__form">
+              <div class="registration__form-title">
+                <h2>Регистрация</h2>
+              </div>
+              <form>
+                <div class="registration__form-input">
+                  <div>
+                    <input type="text" placeholder="Фамилия" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Имя" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Адрес электронной почты" />
+                  </div>
+                  <div class="registration__form-input-tel">
+                    <label for="reg-tel">Номер телефона</label>
+                    <input
+                      id="reg-tel"
+                      type="tel"
+                      placeholder="+7 777 777 77 77"
+                    />
+                  </div>
+                  <div class="signin__form-input-password">
+                    <input
+                      class="sign-password"
+                      type="password"
+                      placeholder="Пароль"
+                    />
+                  </div>
+                </div>
+                <div class="registration__form-btn">
+                  <button>Завершить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="main__carousel">
+        <div class="main-slider">
+          <div class="slide slide-1">
+            <h2>
+              Профессиональная <br />
+              организация мероприятий
+            </h2>
+            <button><a href="tickets.html">Купить билеты</a></button>
+          </div>
+          <div class="slide slide-2">
+            <h2>
+              Профессиональная <br />
+              организация мероприятий
+            </h2>
+            <button><a href="tickets.html">Купить билеты</a></button>
+          </div>
+          <div class="slide slide-3">
+            <h2>
+              Профессиональная <br />
+              организация мероприятий
+            </h2>
+            <button><a href="tickets.html">Купить билеты</a></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__calendar">
+        <div class="main__calendar-title">
+          <h4>Календарь мероприятий</h4>
+        </div>
+        <div class="main__calendar-btn">
+          <button class="APR22 date">22 апреля</button>
+          <button class="APR25 date">25 апреля</button>
+          <button class="MAY22 date">22 мая</button>
+          <button class="MAY30 date">30 мая</button>
+          <button class="SEP16 date">16 сентября</button>
+          <button class="SEP20 date">20 сентября</button>
+          <button class="OCT24 date">24 октября</button>
+        </div>
+        <div class="owl-carousel owl-theme" id="carouselThree">
+          <div><button class="APR22-mob">22 апреля</button></div>
+          <div><button class="APR25-mob">25 апреля</button></div>
+          <div><button class="MAY22-mob">22 мая</button></div>
+          <div><button class="MAY30-mob">30 мая</button></div>
+          <div><button class="SEP16-mob">16 сентября</button></div>
+          <div><button class="SEP20-mob">20 сентября</button></div>
+          <div><button class="OCT24-mob">24 октября</button></div>
+        </div>
+
+        <div class="main__calendar-container date1">
+          <div class="main__calendar-container-img">
+            <img src="assets/other/pic3.jpg" alt="pic" />
+          </div>
+          <div class="main__calendar-container-desc">
+            <div class="main__calendar-container-desc-1">
+              <h2>Развитие отрасли беспилотной авиации в России</h2>
+              <p>
+                Импортозамещение в сфере двигателестроения и микроэлектроники,
+                решение вопроса по сертификации БПЛА и правовому регулированию
+                сферы БАС, подготовка и привлечение кадров в беспилотной
+                отрасли.
+              </p>
+            </div>
+
+            <div class="main__calendar-container-desc-2">
+              <div class="main__calendar-container-desc-2-text1">
+                <p>ФОРСАЙТ-СЕССИЯ</p>
+              </div>
+              <div class="main__calendar-container-desc-2-text2">
+                <p>22 апреля 2024 года</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__calendar-container date2">
+          <div class="main__calendar-container-img">
+            <img src="assets/other/date2.jpg" alt="pic" />
+          </div>
+          <div class="main__calendar-container-desc">
+            <div class="main__calendar-container-desc-1">
+              <h2>Цифровая медицина '24</h2>
+              <p>
+                Эксперты в области цифровизации отрасли и представители бизнеса
+                обсудят актуальные вопросы применения цифровых технологий и
+                определят точки роста для медицины будущего — эффективной,
+                эргономичной и безбумажной.
+              </p>
+            </div>
+
+            <div class="main__calendar-container-desc-2">
+              <div class="main__calendar-container-desc-2-text1">
+                <p>III ЕЖЕГОДНАЯ КОНФЕРЕНЦИЯ</p>
+              </div>
+              <div class="main__calendar-container-desc-2-text2">
+                <p>25 апреля 2024 года</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__calendar-container date3">
+          <div class="main__calendar-container-img">
+            <img src="assets/other/date3.jpg" alt="pic" />
+          </div>
+          <div class="main__calendar-container-desc">
+            <div class="main__calendar-container-desc-1">
+              <h2>Управление проблемными и непрофильными активами</h2>
+              <p>
+                Любой проблемный актив несет в себе существенные затраты на его
+                содержание. Непрофильные активы необходимо правильно учитывать и
+                грамотно ими распоряжаться под контролем регулятора.
+              </p>
+            </div>
+
+            <div class="main__calendar-container-desc-2">
+              <div class="main__calendar-container-desc-2-text1">
+                <p>ПРАКТИЧЕСКАЯ КОНФЕРЕНЦИЯ</p>
+              </div>
+              <div class="main__calendar-container-desc-2-text2">
+                <p>22 мая 2024 года</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__calendar-container date4">
+          <div class="main__calendar-container-img">
+            <img src="assets/other/date4.jpg" alt="pic" />
+          </div>
+          <div class="main__calendar-container-desc">
+            <div class="main__calendar-container-desc-1">
+              <h2>
+                Цифровые экосистемы и сервисы: эффективные стратегии развития
+                российских платформ
+              </h2>
+              <p>
+                В условиях необходимости активной работы над импортозамещением
+                одним из ключевых направлений работы экосистем стали
+                отечественные разработки и ИТ, включающие в себя решения,
+                связанные с ИИ.
+              </p>
+            </div>
+
+            <div class="main__calendar-container-desc-2">
+              <div class="main__calendar-container-desc-2-text1">
+                <p>БИЗНЕС-ФОРУМ</p>
+              </div>
+              <div class="main__calendar-container-desc-2-text2">
+                <p>30 мая 2024 года</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__calendar-container date5">
+          <div class="main__calendar-container-img">
+            <img src="assets/other/date5.jpg" alt="pic" />
+          </div>
+          <div class="main__calendar-container-desc">
+            <div class="main__calendar-container-desc-1">
+              <h2>Технологии Умного города: ресурсный след цифровизации</h2>
+              <p>
+                Доминирующий экономический и демографический вес городов в
+                современном мире ставит принципиально новые задачи для сферы
+                городского развития.
+              </p>
+            </div>
+
+            <div class="main__calendar-container-desc-2">
+              <div class="main__calendar-container-desc-2-text1">
+                <p>ВСЕРОССИЙСКИЙ ФОРУМ</p>
+              </div>
+              <div class="main__calendar-container-desc-2-text2">
+                <p>16 сентября 2024 года</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__calendar-container date6">
+          <div class="main__calendar-container-img">
+            <img src="assets/other/date6.jpg" alt="pic" />
+          </div>
+          <div class="main__calendar-container-desc">
+            <div class="main__calendar-container-desc-1">
+              <h2>Цифровизация транспорта-24</h2>
+              <p>
+                В рабочих сессиях участники обсудят актуальные вопросы
+                применения цифровых технологий, представят практики
+                использования нововведений и определят точки роста для инноваций
+                в транспортных технологиях будущего.
+              </p>
+            </div>
+
+            <div class="main__calendar-container-desc-2">
+              <div class="main__calendar-container-desc-2-text1">
+                <p>IV ЕЖЕГОДНАЯ КОНФЕРЕНЦИЯ</p>
+              </div>
+              <div class="main__calendar-container-desc-2-text2">
+                <p>20 сентября 2024 года</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__calendar-container date7">
+          <div class="main__calendar-container-img">
+            <img src="assets/other/date7.jpg" alt="pic" />
+          </div>
+          <div class="main__calendar-container-desc">
+            <div class="main__calendar-container-desc-1">
+              <h2>Технологии Умного города: ресурсный след цифровизации</h2>
+              <p>
+                Лидеры цифровой трансформации представят практики использования
+                нововведений и определят точки роста строительной отрасли.
+              </p>
+            </div>
+
+            <div class="main__calendar-container-desc-2">
+              <div class="main__calendar-container-desc-2-text1">
+                <p>ЕЖЕГОДНЫЙ БИЗНЕС-ФОРУМ</p>
+              </div>
+              <div class="main__calendar-container-desc-2-text2">
+                <p>24 октября 2024 года</p>
+                <p><a href="buytickets.html">Подробнее</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__online">
+        <div class="main__online-title">
+          <h4>Онлайн мероприятия</h4>
+        </div>
+
+        <div class="main__online-container">
+          <div class="main__online-container-img">
+            <img src="assets/other/pic6.jpg" alt="pic" />
+          </div>
+          <div class="main__online-container-desc">
+            <div class="main__online-container-desc-1">
+              <h2>
+                Рекламный контент и участники рынка в зоне риска: актуальные
+                судебные споры и практика
+              </h2>
+            </div>
+
+            <div class="main__online-container-desc-2">
+              <div class="main__online-container-desc-2-text1">
+                <p>Web-конференция</p>
+              </div>
+              <div class="main__online-container-desc-2-text2">
+                <p>14 марта 2024 года</p>
+                <p>Подробнее</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__online-container">
+          <div class="main__online-container-img">
+            <img src="assets/other/pic8.jpg" alt="pic" />
+          </div>
+          <div class="main__online-container-desc">
+            <div class="main__online-container-desc-1">
+              <h2>
+                ПРАВО И ФИНАНСЫ <br />
+                Трансформация инструментов инвестирования и структурирования
+              </h2>
+            </div>
+
+            <div class="main__online-container-desc-2">
+              <div class="main__online-container-desc-2-text1">
+                <p>Web-конференция</p>
+              </div>
+              <div class="main__online-container-desc-2-text2">
+                <p>28 марта 2024 года</p>
+                <p>Подробнее</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__online-container">
+          <div class="main__online-container-img">
+            <img src="assets/other/pic7.jpg" alt="pic" />
+          </div>
+          <div class="main__online-container-desc">
+            <div class="main__online-container-desc-1">
+              <h2>Субсидиарная ответственность: размер имеет значение</h2>
+            </div>
+
+            <div class="main__online-container-desc-2">
+              <div class="main__online-container-desc-2-text1">
+                <p>Web-конференция</p>
+              </div>
+              <div class="main__online-container-desc-2-text2">
+                <p>12 апреля 2024 года</p>
+                <p>Подробнее</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__reviews">
+        <div class="main__reviews-title">
+          <h4>Что о нас говорят?</h4>
+        </div>
+        <div class="owl-carousel owl-theme" id="carouselOne">
+          <div class="owl-carousel-item">
+            <div class="owl-carousel-item-title">
+              <img style="width: 100px" src="assets/team/team5.jpg" alt="pic" />
+              <p>Сергей фокин,спикер</p>
+              <img
+                style="width: 100px"
+                src="assets/icons/stars-group.png"
+                alt="stars"
+              />
+            </div>
+            <div class="owl-carousel-item-text">
+              <p>
+                Пребывание в этом центре конференций оставило у меня невероятно
+                положительное впечатление. Начиная с момента моего прибытия, я
+                был поражен профессионализмом и заботой персонала. Они
+                обеспечили все необходимое для комфортного проведения моего
+                выступления, начиная с технической поддержки до мелочей, как
+                вода и свежие фрукты в комнате для отдыха.
+              </p>
+            </div>
+          </div>
+          <div class="owl-carousel-item">
+            <div class="owl-carousel-item-title">
+              <img style="width: 100px" src="assets/team/team2.jpg" alt="pic" />
+              <p>Андрей Иванов,спикер</p>
+              <img
+                style="width: 100px"
+                src="assets/icons/stars-group.png"
+                alt="stars"
+              />
+            </div>
+            <div class="owl-carousel-item-text">
+              <p>
+                Пребывание в этом центре конференций оставило у меня невероятно
+                положительное впечатление. Начиная с момента моего прибытия, я
+                был поражен профессионализмом и заботой персонала. Они
+                обеспечили все необходимое для комфортного проведения моего
+                выступления, начиная с технической поддержки до мелочей, как
+                вода и свежие фрукты в комнате для отдыха.
+              </p>
+            </div>
+          </div>
+          <div class="owl-carousel-item">
+            <div class="owl-carousel-item-title">
+              <img style="width: 100px" src="assets/team/team5.jpg" alt="pic" />
+              <p>Сергей фокин,спикер</p>
+              <img
+                style="width: 100px"
+                src="assets/icons/stars-group.png"
+                alt="stars"
+              />
+            </div>
+            <div class="owl-carousel-item-text">
+              <p>
+                Пребывание в этом центре конференций оставило у меня невероятно
+                положительное впечатление. Начиная с момента моего прибытия, я
+                был поражен профессионализмом и заботой персонала. Они
+                обеспечили все необходимое для комфортного проведения моего
+                выступления, начиная с технической поддержки до мелочей, как
+                вода и свежие фрукты в комнате для отдыха.
+              </p>
+            </div>
+          </div>
+          <div class="owl-carousel-item">
+            <div class="owl-carousel-item-title">
+              <img style="width: 100px" src="assets/team/team2.jpg" alt="pic" />
+              <p>Андрей Иванов,спикер</p>
+              <img
+                style="width: 100px"
+                src="assets/icons/stars-group.png"
+                alt="stars"
+              />
+            </div>
+            <div class="owl-carousel-item-text">
+              <p>
+                Пребывание в этом центре конференций оставило у меня невероятно
+                положительное впечатление. Начиная с момента моего прибытия, я
+                был поражен профессионализмом и заботой персонала. Они
+                обеспечили все необходимое для комфортного проведения моего
+                выступления, начиная с технической поддержки до мелочей, как
+                вода и свежие фрукты в комнате для отдыха.
+              </p>
+            </div>
+          </div>
+          <div class="owl-carousel-item">
+            <div class="owl-carousel-item-title">
+              <img style="width: 100px" src="assets/team/team5.jpg" alt="pic" />
+              <p>Сергей фокин,спикер</p>
+              <img
+                style="width: 100px"
+                src="assets/icons/stars-group.png"
+                alt="stars"
+              />
+            </div>
+            <div class="owl-carousel-item-text">
+              <p>
+                Пребывание в этом центре конференций оставило у меня невероятно
+                положительное впечатление. Начиная с момента моего прибытия, я
+                был поражен профессионализмом и заботой персонала. Они
+                обеспечили все необходимое для комфортного проведения моего
+                выступления, начиная с технической поддержки до мелочей, как
+                вода и свежие фрукты в комнате для отдыха.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__photoreport">
+        <div class="main__photoreport-title">
+          <h4>Фотоотчет с прошедших мероприятий</h4>
+        </div>
+        <div class="owl-carousel owl-theme" id="carouselTwo">
+          <div class="item">
+            <img src="assets/slider/10.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/10.webp" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/11.webp" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/12.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/13.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/14.webp" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/15.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/16.webp" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/17.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/18.webp" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/19.webp" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/2.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/20.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/21.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/21.webp" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/22.webp" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/23.webp" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/24.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/25.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/26.webp" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/27.webp" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/28.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/3.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/4.webp" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/5.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/6.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/7.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/8.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/9.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/image-5.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/image-6.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/IMG_7894.jpg" alt="photorep" />
+          </div>
+          <div class="item">
+            <img src="assets/slider/photo.webp" alt="photorep" />
+          </div>
+        </div>
+      </section>
+      <section class="main__form">
+        <div class="main__form-text">
+          <p>Хотите получить план всех событий?</p>
+          <p>Напишите нам и мы ответим в ближайшее время</p>
+        </div>
+        <div class="main__form-data">
+          <form>
+            <div>
+              <div class="error-name"></div>
+              <input type="text" placeholder="Имя" id="main_name" required />
+            </div>
+            <div>
+              <div class="error-tel-mob"></div>
+              <input type="tel" placeholder="Телефон" id="main_tel" required />
+              <div class="error-email-mob"></div>
+              <input
+                type="email"
+                placeholder="Email"
+                id="main_email"
+                required
+              />
+            </div>
+            <div class="flex">
+              <div class="error-tel"></div>
+              <div class="error-email"></div>
+            </div>
+            <div><input type="text" placeholder="Компания" /></div>
+            <div>
+              <button type="submit" id="main_data-btn">Получить</button>
+              <p>
+                Нажимая «Получить», я соглашаюсь с условиями
+                <a href="#">обработки персональных данных.</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__container-1">
+          <div><img src="assets/logo/logo.png" alt="logo" /></div>
+          <div>
+            <div>
+              Профессиональная <br />организация конференций<br />
+              любой сложности в Москве.
+            </div>
+            <div>Социальные сети</div>
+            <div>
+              <a href="#"
+                ><img src="assets/icons/youtube.png" alt="youtube"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/telegram.png" alt="telegram"
+              /></a>
+              <a href="#"><img src="assets/icons/dzen.png" alt="yadzen" /></a>
+            </div>
+            <div>Реквизиты компании</div>
+            <div>ИП Лючина Татьяна Изосимовна</div>
+            <div>ИНН: 550305019040</div>
+            <div>ОГРН/ОГРНИП: 323554300023500</div>
+          </div>
+        </div>
+        <div class="footer__container-2">
+          <div>
+            <ul>
+              <li><a href="index.html">Календарь</a></li>
+              <li><a href="tickets.html">Билеты</a></li>
+              <li><a href="company.html">О компании</a></li>
+              <li><a href="archive.html">Архив</a></li>
+              <li><a href="partner.html">Партнерам</a></li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <h4>ПРОГРАММНАЯ ДИРЕКЦИЯ <br />ДЕЛОВЫХ ВСТРЕЧ</h4>
+              <p>
+                Екатерина Головченко<br />
+                eg@eventtoday.biz <br />
+                Тема письма: Выступление спикера <br />[тема мероприятия или
+                доклада]
+              </p>
+            </div>
+            <div>
+              <h4>ПО ВОПРОСАМ ПАРТНЕРСТВА И <br />РАЗМЕЩЕНИЯ СТЕНДОВ</h4>
+              <p>
+                +7 (951) 414-22-13 <br />
+                cc@eventtoday.biz <br />
+                Тема письма: Продвижение <br />компании [название вашей
+                <br />компании]
+              </p>
+            </div>
+            <div>
+              <h4>
+                ДЛЯ ИНФОРМАЦИОННЫХ<br />
+                СПОНСОРОВ И СМИ
+              </h4>
+              <p>
+                Светлана Барцева <br />
+                s.barceva@eventtoday.biz <br />
+                Тема письма: Информационная<br />
+                поддержка | Аккредитация СМИ <br />[название мероприятия]
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__container-end">
+        <div>© EventСегодня, 2024</div>
+        <div>
+          <a href="#">Оферта</a>
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Партнерские пакеты</a>
+        </div>
+      </div>
+    </footer>
+    <script src="owl/jquery-3.7.1.js"></script>
+    <script src="owl/owl.js"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.owl-carousel').owlCarousel();
+      });
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

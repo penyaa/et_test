@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Event Today</title>
+  </head>
+  <body>
+    <header>
+      <section class="main">
+        <div class="main__logo">
+          <a href="index.html"><img src="assets/logo/logo.png" alt="logo" /></a>
+        </div>
+        <div class="main__links">
+          <ul class="">
+            <li><a href="index.html">Календарь</a></li>
+            <li><a href="tickets.html">Билеты</a></li>
+            <li><a href="company.html">О компании</a></li>
+            <li><a href="archive.html">Архив</a></li>
+            <li><a class="selected" href="partner.html">Партнерам</a></li>
+          </ul>
+        </div>
+        <div class="main__reg">
+          <button id="myBtn">Регистрация</button>
+          <a href="registration.html"
+            ><img src="assets/icons/Vector.png" alt="pic"
+          /></a>
+        </div>
+
+        <div class="menu">
+          <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+          <label for="burger-checkbox" class="burger"></label>
+          <ul class="menu-list">
+            <li><a class="menu-item" href="index.html">Календарь</a></li>
+            <li><a class="menu-item" href="tickets.html">Билеты</a></li>
+            <li><a class="menu-item" href="company.html">О компании</a></li>
+            <li><a class="menu-item" href="archive.html">Архив</a></li>
+            <li><a class="menu-item" href="partner.html">Партнерам</a></li>
+          </ul>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="registration__form">
+              <div class="registration__form-title">
+                <h2>Регистрация</h2>
+              </div>
+              <form>
+                <div class="registration__form-input">
+                  <div>
+                    <input type="text" placeholder="Фамилия" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Имя" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Адрес электронной почты" />
+                  </div>
+                  <div class="registration__form-input-tel">
+                    <label for="reg-tel">Номер телефона</label>
+                    <input
+                      id="reg-tel"
+                      type="tel"
+                      placeholder="+7 777 777 77 77"
+                    />
+                  </div>
+                  <div class="signin__form-input-password">
+                    <input
+                      class="sign-password"
+                      type="password"
+                      placeholder="Пароль"
+                    />
+                  </div>
+                </div>
+                <div class="registration__form-btn">
+                  <button>Завершить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="partner__event">
+        <div class="partner__event-title">
+          <h3>Ценности мероприятия</h3>
+        </div>
+        <div class="partner__event-container">
+          <div class="partner__event-container-start">
+            <div class="partner__event-container-start-num">
+              <p>01</p>
+            </div>
+            <div class="partner__event-container-start-text">
+              <h3>Получите статистику мероприятия</h3>
+              <p>
+                Множество касаний аудитории через рассылки анонсов,
+                телемаркетинг, рекламу в интернет-ресурсах
+              </p>
+            </div>
+          </div>
+
+          <div class="partner__event-container-end">
+            <div class="partner__event-container-end-num">
+              <p>02</p>
+            </div>
+            <div class="partner__event-container-end-text">
+              <h3>Пользуйтесь имиджевой поддержкой</h3>
+              <p>
+                Множество касаний аудитории через рассылки анонсов,
+                телемаркетинг, рекламу в интернет-ресурсах
+              </p>
+            </div>
+          </div>
+
+          <div class="partner__event-container-start">
+            <div class="partner__event-container-start-num">
+              <p>03</p>
+            </div>
+            <div class="partner__event-container-start-text">
+              <h3>Покажите экспертность</h3>
+              <p>
+                Тема конференции выбирается в зависимости от потребностей вашей
+                компании и актуальности этого вопроса в целом
+              </p>
+            </div>
+          </div>
+
+          <div class="partner__event-container-end">
+            <div class="partner__event-container-end-num">
+              <p>04</p>
+            </div>
+            <div class="partner__event-container-end-text">
+              <h3>Общайтесь с аудиторией</h3>
+              <p>
+                Аудитория мероприятия собирается по целевому запросу и
+                таргетируется по профессиональному (HR, CFO, CEO, CMO, etc.)
+              </p>
+            </div>
+          </div>
+
+          <div class="partner__event-container-start">
+            <div class="partner__event-container-start-num">
+              <p>05</p>
+            </div>
+            <div class="partner__event-container-start-text">
+              <h3>Не отдавайте своих клиентов конкуренту!</h3>
+              <p>
+                Повысьте заинтересованность и доверие партнеров и заказчиков
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partner__form-1">
+        <div class="partner__form-1-container">
+          <div class="partner__form-1-container-text">
+            <p>Хотите получить подробное описание партнерских опций?</p>
+            <p>Напишите нам и мы ответим в ближайшее время.</p>
+          </div>
+          <div class="partner__form-1-container-data">
+            <form>
+              <div>
+                <input
+                  class="partner-name-1"
+                  type="text"
+                  placeholder="Имя"
+                  required
+                />
+                <div class="partner-name-error-1"></div>
+              </div>
+              <div class="flex">
+                <input
+                  class="partner-tel-1"
+                  type="tel"
+                  placeholder="Телефон"
+                  required
+                />
+                <input
+                  class="partner-email-1"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="flex">
+                <div class="partner-tel-error-1"></div>
+                <div class="partner-email-error-1"></div>
+              </div>
+              <div>
+                <input type="text" placeholder="Компания" required />
+                <div class="partner-company-error-1"></div>
+              </div>
+              <div>
+                <button type="submit" class="partner-btn-1">Получить</button>
+                <p>
+                  Нажимая «Получить», я соглашаюсь с условиями
+                  <a href="#">обработки персональных данных.</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="partner__sponsor">
+        <div class="partner__sponsor-container">
+          <div class="partner__sponsor-container-title">
+            <h3>Официальный спонсор</h3>
+          </div>
+          <div class="partner__sponsor-container-item">
+            <div class="partner__sponsor-container-item-img">
+              <img src="assets/icons/10.png" alt="icon" />
+            </div>
+            <div class="partner__sponsor-container-item-text">
+              <h3>Интеграция бренда</h3>
+              <p>
+                • Размещение информации о поддержке Спонсора в
+                пресс-релизах,анонсах, пост-релизах для СМk
+              </p>
+              <p>
+                • Интервью представителя компании в итоговом ролике о
+                конференции с последующим размещением на сайте конференциe
+              </p>
+              <p>
+                • Возможность учреждения номинации для участников мероприятия
+              </p>
+            </div>
+            <div class="partner__sponsor-container-item-btn">
+              <button class="open">Развернуть</button>
+            </div>
+          </div>
+          <div class="container-text">
+            <button class="close">Свернуть</button>
+            <p>
+              -Предоставление площедки и персонала для проведения мероприятия.
+            </p>
+            <p>
+              -Возможность выступления с приветственным словом на открытии и
+              закрытии мероприятия.
+            </p>
+            <p>Возможность учреждения номинации для участников мероприятия.</p>
+            <p>
+              -Размещение информации о поддержке Партнера в пресс-релизах,
+              анонсах, пост-релизах для сми.
+            </p>
+            <p>
+              -Размещение биографии, комментариев и публикаций представителя
+              компании на сайте мероприятия.
+            </p>
+            <p>
+              -Рекламная кампания /промоушн. Аудитория мероприятия собирается по
+              целевому запросу и таргетируется по профессиональному (НЕ, СРО,
+              СЕ, СМО, в.)
+            </p>
+            <p>
+              -размещение логотипа и описания в выделенной полосе сайта
+              мероприятия с переходом на сайт спонсора, информации о ПАртнере на
+              сайте организатора, размещение логотипа и информации о Спонсоре в
+              интернет-ресурсах Медиа- и Инфо- Партнеров.
+            </p>
+            <p>
+              -Публикация статьи о выступлении эксперта от Закон.ру
+              ("Издательская группа "Закон", материал от редактора).
+            </p>
+            <p>
+              -Размещение лид-магнита Партнера на сайте мероприятия на
+              постоянной основе.
+            </p>
+            <p>
+              -Включение рекламного модуля в рассылку по собственной базе
+              клиентов и базе профильного ресурса-партнера (зудитория -10 000
+              контактов).
+            </p>
+            <p>
+              -Размещение логотипа с указанием статуса Стратегический Партнер на
+              следующих рекламно- информационных носителях: - на главном баннере
+              за президиумом заседания; - заставке в зале проведения
+              конференции; - бейджах/лентах участников, билетах,
+            </p>
+            <p>
+              -Вложение рекламных и маркетинговых материалов, каталога спонсора
+              в пакеты участников конференции.
+            </p>
+            <p>
+              -размещение информационных материалов, флагов, баннеров Спонсора в
+              зонах проведения презентаций и выступлений в рамках мероприятия.
+            </p>
+            <p>
+              -ТВ-съемка документального фильма, экскурсии по предприятию,
+              демонстрация решения с последующим размещением на сайте и канале
+              конференции, в интернет-ресурсах Медиз- Партнера, а также
+              предоставление отснятого материала для личного пользования
+              компании.
+            </p>
+            <p>
+              - тема конференции выбирается в зависимости от потребностей вашей
+              компании и актуальности этого вопроса в целом
+            </p>
+            <p>-предоставление переговорных комнат и МР- спикерских комнат</p>
+            <p>
+              -выпупление представителей компании в. деловой части программы (до
+              2х человек)
+            </p>
+            <p>
+              - Участие представителей компании в качестве делегатов (до ти
+              человек)
+            </p>
+            <p>
+              - Охват рекламной кампании — более 100 000 касаний через рассылки,
+              телемаркетинг, контекстную и таргетированную рекламу.
+            </p>
+            <p>
+              - более 30 информационных партнеров, среди которых авторитетные
+              профильные издания.
+            </p>
+          </div>
+        </div>
+
+        <div class="partner__sponsor-container">
+          <div class="partner__sponsor-container-title">
+            <h3>Официальный партнер</h3>
+          </div>
+          <div class="partner__sponsor-container-item">
+            <div class="partner__sponsor-container-item-img">
+              <img src="assets/icons/11.png" alt="icon" />
+            </div>
+            <div class="partner__sponsor-container-item-text">
+              <h3>Презентация компании</h3>
+              <p>
+                • Презентация компании с указанием статуса "Официальный Партнер"
+              </p>
+              <p>
+                • Предоставление переговорных комнат для деловых переговоров
+                партнерам и заказчикам
+              </p>
+              <p>• Организация брифинг-зоны для работы СМИ</p>
+            </div>
+            <div class="partner__sponsor-container-item-btn">
+              <button class="open">Развернуть</button>
+            </div>
+          </div>
+          <div class="container-text">
+            <button class="close">Свернуть</button>
+            <p>
+              - Размещение логотипа компании с указанием статуса в выделенной
+              полосе "Партнеры" на сайте мероприятия
+            </p>
+            <p>
+              - размещение биографии, комментариев и публикаций представителя
+              компании на сайте события
+            </p>
+            <p>
+              - Включение логотипа компании и Партнерского блока в рассылку
+              анонса события (вудитория -3 000 целевых контактов).
+            </p>
+            <p>
+              - Включение логотипа и Промо компании в письма с пост-материалами
+              участникам.
+            </p>
+            <p>- Включение блока Партнера в пост-релиз.</p>
+            <p>
+              - Размещение логотипа с указанием статуса "Партнер события" на
+              следующих рекламно-информационных носителях: на главном баннере за
+              президиумом заседания; на заставке экрана в зале проведения
+              мероприятия
+            </p>
+            <p>
+              - Вложение рекламных и маркетинговых материалов в пакеты
+              участников мероприятия
+            </p>
+            <p>
+              - ТВ-съемка интервью Спикера (на площадке события) с последующим
+              размещением на канале конференции, а также предоставление
+              отснятого материала для личного пользования компании
+              (продолжительность до 10 минут)
+            </p>
+            <p>
+              - более 30 информационных партнеров, среди которых авторитетные
+              деловые издания.
+            </p>
+            <p>- выступление представителя компании в деловой части программ</p>
+            <p>
+              - Участие представителей компании в. качестве делегатов (до 4-х
+              человек)
+            </p>
+            <p>
+              - Предоставление площадки до 4 кв.м. для эксклюзивного
+              позиционирования партнера
+            </p>
+          </div>
+        </div>
+
+        <div class="partner__sponsor-container">
+          <div class="partner__sponsor-container-title">
+            <h3>Cтендист</h3>
+          </div>
+          <div class="partner__sponsor-container-item">
+            <div class="partner__sponsor-container-item-img">
+              <img src="assets/icons/12.png" alt="icon" />
+            </div>
+            <div class="partner__sponsor-container-item-text">
+              <h3>Эксклюзивное позиционирование</h3>
+              <p>
+                Ваш выставочный стенд— это визитная карточка компании нашего
+                отраслевого мероприятия. Стенды выполняют не только
+                представительские функции, но и решают важные маркетинговые
+                задачи: заявить о компании, бренде, товаре, услуге.
+              </p>
+            </div>
+            <div class="partner__sponsor-container-item-btn">
+              <button class="open">Развернуть</button>
+            </div>
+          </div>
+          <div class="container-text">
+            <button class="close">Свернуть</button>
+            <p>
+              - Размещение логотипа компании с указанием статуса в выделенной
+              полосе. "Партнеры" на сайте мероприятия с активной ссылкой на
+              ресурс. более 30 информационных партнеров
+            </p>
+            <p>
+              - Размещение логотипа с указанием статуса "Партнер" на следующих
+              рекламно- информационных носителях: заставке в зале проведения
+              конференции; печатной версии программы
+            </p>
+            <p>- Упоминание Партнера в пост-релизе.</p>
+            <p>
+              - Вложение маркетинговых материалов Партнера в пакеты участникам
+              материалов по итогам события. Участие представителей компании в
+              качестве.
+            </p>
+            <p>
+              - Вложение оффера Партнера в электронные папки участникам
+              (рассылка материалов по итогам события)
+            </p>
+            <p>
+              - Предоставление площадки до 3 кв.м. для позиционирования Партнера
+              (предоставляется оборудованное рабочее место)
+            </p>
+            <p>
+              - более 30 информационных партнеров, среди которых авторитетные
+              деловые издания.
+            </p>
+            <p>
+              - изготовление маркетинговых материалов по макету (на выбор:
+              ролл-ап, буклеты, листовки, визитки или плазменная панель)
+            </p>
+            <p>
+              - участие представителей компании в качестве делегатов (до 3-х
+              человек)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="partner__form-2">
+        <div class="partner__form-2-container">
+          <div class="partner__form-2-container-text">
+            <p>Оформить запрос на предоставление плана площадки</p>
+            <p>
+              Заполните форму и мы направим Вам подробности по параметрам
+              площадки события
+            </p>
+          </div>
+          <div class="form-2-success"></div>
+          <div class="partner__form-2-container-data">
+            <form class="form2">
+              <div>
+                <input
+                  class="partner-name-2"
+                  type="text"
+                  placeholder="Имя"
+                  required
+                />
+                <div class="partner-name-error-2"></div>
+              </div>
+              <div class="flex">
+                <input
+                  class="partner-tel-2"
+                  type="tel"
+                  placeholder="Телефон"
+                  required
+                />
+                <input
+                  class="partner-email-2"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="flex">
+                <div class="partner-tel-error-2"></div>
+                <div class="partner-email-error-2"></div>
+              </div>
+              <div>
+                <input
+                  class="partner-company-2"
+                  type="text"
+                  placeholder="Компания"
+                  required
+                />
+                <div class="partner-company-error-2"></div>
+              </div>
+              <div>
+                <input
+                  class="partner-event-2"
+                  type="text"
+                  placeholder="Название мероприятия"
+                  required
+                />
+                <div class="partner-event-error-2"></div>
+              </div>
+              <div>
+                <button type="submit" class="partner-btn-2">Получить</button>
+                <p>
+                  Нажимая «Получить», я соглашаюсь с условиями
+                  <a href="#">обработки персональных данных.</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="partner__org">
+        <div class="partner__org-title">
+          <h3>Организация пространства мероприятий</h3>
+        </div>
+        <div class="partner__org-container">
+          <a class="partner__org-container-item item-1" href="archive.html">
+            <p>Всероссийский форум</p>
+            <p>«Защита и безопасность Умного города»</p>
+          </a>
+
+          <a class="partner__org-container-item item-2" href="archive.html">
+            <p>Ежегодная Конференция</p>
+            <p>«Цифровизация транспорта-22»</p>
+          </a>
+
+          <a class="partner__org-container-item item-3" href="archive.html">
+            <p>Ежегодная Конференция</p>
+            <p>«Цифровизация транспорта-22»</p>
+          </a>
+
+          <a class="partner__org-container-item item-4" href="archive.html">
+            <p>Всероссийский форум</p>
+            <p>«Защита и безопасность Умного города»</p>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+          <div class="footer__container-1">
+            <div><img src="assets/logo/logo.png" alt="logo" /></div>
+            <div>
+              <div>
+                Профессиональная <br />организация конференций<br />
+                любой сложности в Москве.
+              </div>
+              <div>Социальные сети</div>
+              <div>
+                <a href="#"
+                  ><img src="assets/icons/youtube.png" alt="youtube"
+                /></a>
+                <a href="#"
+                  ><img src="assets/icons/telegram.png" alt="telegram"
+                /></a>
+                <a href="#"><img src="assets/icons/dzen.png" alt="yadzen" /></a>
+              </div>
+              <div>Реквизиты компании</div>
+              <div>ИП Лючина Татьяна Изосимовна</div>
+              <div>ИНН: 550305019040</div>
+              <div>ОГРН/ОГРНИП: 323554300023500</div>
+            </div>
+          </div>
+          <div class="footer__container-2">
+            <div>
+              <ul>
+                <li><a href="index.html">Календарь</a></li>
+                <li><a href="tickets.html">Билеты</a></li>
+                <li><a href="company.html">О компании</a></li>
+                <li><a href="archive.html">Архив</a></li>
+                <li><a href="partner.html">Партнерам</a></li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <h4>ПРОГРАММНАЯ ДИРЕКЦИЯ <br />ДЕЛОВЫХ ВСТРЕЧ</h4>
+                <p>
+                  Екатерина Головченко<br />
+                  eg@eventtoday.biz <br />
+                  Тема письма: Выступление спикера <br />[тема мероприятия или
+                  доклада]
+                </p>
+              </div>
+              <div>
+                <h4>ПО ВОПРОСАМ ПАРТНЕРСТВА И <br />РАЗМЕЩЕНИЯ СТЕНДОВ</h4>
+                <p>
+                  +7 (951) 414-22-13 <br />
+                  cc@eventtoday.biz <br />
+                  Тема письма: Продвижение <br />компании [название вашей
+                  <br />компании]
+                </p>
+              </div>
+              <div>
+                <h4>
+                  ДЛЯ ИНФОРМАЦИОННЫХ<br />
+                  СПОНСОРОВ И СМИ
+                </h4>
+                <p>
+                  Светлана Барцева <br />
+                  s.barceva@eventtoday.biz <br />
+                  Тема письма: Информационная<br />
+                  поддержка | Аккредитация СМИ <br />[название мероприятия]
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer__container-end">
+          <div>© EventСегодня, 2024</div>
+          <div>
+            <a href="#">Оферта</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Партнерские пакеты</a>
+          </div>
+        </div>
+      </footer>
+    <script src="js/partner.js"></script>
+  </body>
+</html>

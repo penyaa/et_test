@@ -1,0 +1,276 @@
+.buy__tickets-form {
+  text-align: center;
+
+  &-title {
+    h4 {
+      margin-top: -10px;
+      color: $main-red;
+    }
+    p:nth-child(3) {
+      color: $footer;
+      font-size: 0.7em;
+      margin-bottom: 20px;
+    }
+
+    p:last-child {
+      font-size: 0.6em;
+      margin-bottom: 50px;
+    }
+  }
+
+  &-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .fio_error,
+    .email_error,
+    .tel_error {
+      font-size: 0.6em;
+      color: $main-red;
+      padding-bottom: 10px;
+    }
+
+    label {
+      color: $footer;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8em;
+      margin-bottom: 7px;
+    }
+    input,
+    select {
+      margin-bottom: 30px;
+      align-self: center;
+      width: 40%;
+      padding: 15px;
+      border: 2px solid $main-red;
+      border-radius: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    select {
+      width: 43%;
+      color: $footer;
+    }
+
+    input::placeholder {
+      font-size: 0.8em;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(176, 176, 176);
+    }
+    &-1 {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-input-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 29%;
+    p:first-child {
+      margin-bottom: -5px;
+      color: $text;
+    }
+    p:nth-child(2) {
+      color: $footer;
+      font-size: 0.6em;
+      margin-bottom: 20px;
+    }
+
+    &-count {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      button {
+        padding: 10px;
+        cursor: pointer;
+        font-size: 1.2em;
+        width: 10px;
+        background-color: white;
+        border: none;
+        margin-right: 2px;
+      }
+      input {
+        padding: 5px;
+        text-align: center;
+        width: 30px;
+        height: 20px;
+        border: 1.2px solid $main-red;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  &-input-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: -3%;
+
+    input {
+      accent-color: $main-red;
+    }
+    label {
+      font-size: 0.7em;
+      width: 35%;
+      text-align: left;
+      margin-left: 5px;
+      color: $footer;
+      font-family: Arial, Helvetica, sans-serif;
+      span {
+        color: $main-red;
+      }
+    }
+  }
+  &-input-4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    button {
+      border: none;
+      padding: 10px;
+      width: 130px;
+      background-color: $main-red;
+      color: white;
+      border-radius: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .buy__tickets-form {
+    text-align: center;
+
+    &-title {
+      h4 {
+        margin-top: -10px;
+        color: $main-red;
+      }
+      p:nth-child(3) {
+        color: $footer;
+        font-size: 0.7em;
+        margin-bottom: 20px;
+      }
+
+      p:last-child {
+        font-size: 0.6em;
+        margin-bottom: 50px;
+      }
+    }
+
+    &-input {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      label {
+        color: $footer;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+        margin-bottom: 7px;
+      }
+      input {
+        margin-bottom: 30px;
+        align-self: center;
+        width: 90%;
+        padding: 15px;
+        border: 2px solid $main-red;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      select {
+        width: 95%;
+      }
+
+      input::placeholder {
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(176, 176, 176);
+      }
+      &-1 {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &-input-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      margin-left: 0;
+      p:first-child {
+        margin-bottom: -5px;
+        color: $text;
+      }
+      p:nth-child(2) {
+        color: $footer;
+        font-size: 0.8em;
+        margin-bottom: 20px;
+      }
+
+      &-count {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        button {
+          width: 15px;
+          background-color: white;
+          border: none;
+          margin-right: 2px;
+        }
+        input {
+          width: 15px;
+          height: 20px;
+          border: 1.2px solid $main-red;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    &-input-3 {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      margin-top: 30px;
+      margin-left: -3%;
+
+      input {
+        accent-color: $main-red;
+      }
+      label {
+        font-size: 0.7em;
+        width: 100%;
+        text-align: left;
+        margin-left: 5px;
+        color: $footer;
+        font-family: Arial, Helvetica, sans-serif;
+        span {
+          color: $main-red;
+        }
+      }
+    }
+    &-input-4 {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+
+      button {
+        border: none;
+        padding: 10px;
+        width: 130px;
+        background-color: $main-red;
+        color: white;
+        border-radius: 25px;
+      }
+    }
+  }
+}

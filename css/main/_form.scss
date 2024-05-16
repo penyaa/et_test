@@ -1,0 +1,145 @@
+.main__form {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  &-text {
+    p:first-child {
+      font-size: 1.5em;
+      width: 300px;
+    }
+    p:last-child {
+      width: 230px;
+    }
+  }
+
+  &-data {
+    .flex {
+      display: flex;
+    }
+    div:nth-child(2) {
+      display: flex;
+      gap: 10px;
+      width: 80%;
+    }
+    input {
+      margin: 0px 0px 40px 0px;
+      width: 80%;
+      border: none;
+      padding: 5px;
+      border-bottom: 2px solid black;
+    }
+    input::placeholder {
+      color: black;
+      font-size: 0.875em;
+    }
+
+    div:last-child {
+      button {
+        border: none;
+        background-color: $main-red;
+        color: white;
+        padding: 8px 20px 8px 20px;
+        font-size: 0.875em;
+        border-radius: 25px;
+      }
+      p {
+        width: 90%;
+        margin-top: 10px;
+        font-size: 0.8em;
+        color: gray;
+        a {
+          color: grey;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .error-name,
+  .error-tel,
+  .error-email,
+  .error-tel-mob,
+  .error-email-mob {
+    color: $main-red;
+    font-size: 0.6em;
+  }
+  .error-tel-mob,
+  .error-email-mob {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__form {
+    margin-top: 0;
+    display: block;
+    width: 85%;
+    text-align: center;
+
+    &-text {
+      text-align: center;
+      p:first-child {
+        font-size: 1.3em;
+        width: 100%;
+      }
+      p:last-child {
+        width: 100%;
+      }
+    }
+
+    &-data {
+      .error-email,
+      .error-tel {
+        display: none;
+      }
+      .error-email-mob,
+      .error-tel-mob {
+        display: block;
+      }
+      div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+        width: 100%;
+      }
+      input {
+        margin: 0px 0px 20px 0px;
+        width: 100%;
+        border: 2px solid $main-red;
+        border-radius: 10px;
+        padding: 5px;
+        border-bottom: 2px solid $main-red;
+      }
+      input::placeholder {
+        color: $text;
+        font-size: 0.875em;
+      }
+
+      div:last-child {
+        display: block;
+        button {
+          border: none;
+          background-color: $main-red;
+          color: white;
+          padding: 8px 20px 8px 20px;
+          font-size: 0.875em;
+          border-radius: 25px;
+        }
+        p {
+          width: 100%;
+          margin-top: 10px;
+          font-size: 0.8em;
+          color: gray;
+          a {
+            color: grey;
+            font-weight: 400;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.review__modal {
+  margin-top: 50px;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  &-container {
+    background-color: #f1f1f1;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: block;
+    &-close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    &-close:hover,
+    &-close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    &-content {
+      text-align: center;
+
+      &-form {
+        &-name {
+          padding-bottom: 20px;
+          input {
+            width: 60%;
+            padding: 10px;
+            border: 2px solid $main-red;
+            border-radius: 10px;
+          }
+        }
+        .rating-area {
+          z-index: 100;
+          overflow: hidden;
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          flex-direction: row-reverse;
+        }
+        .rating-area:not(:checked) > input {
+          display: none;
+        }
+        .rating-area:not(:checked) > label {
+          float: right;
+          width: 42px;
+          padding: 0;
+          cursor: pointer;
+          font-size: 1.5em;
+          line-height: 25px;
+          color: lightgrey;
+          text-shadow: 1px 1px #bbb;
+        }
+        .rating-area:not(:checked) > label:before {
+          content: '★';
+        }
+        .rating-area > input:checked ~ label {
+          color: gold;
+          text-shadow: 1px 1px #c60;
+        }
+        .rating-area:not(:checked) > label:hover,
+        .rating-area:not(:checked) > label:hover ~ label {
+          color: gold;
+        }
+        .rating-area > input:checked + label:hover,
+        .rating-area > input:checked + label:hover ~ label,
+        .rating-area > input:checked ~ label:hover,
+        .rating-area > input:checked ~ label:hover ~ label,
+        .rating-area > label:hover ~ input:checked ~ label {
+          color: gold;
+          text-shadow: 1px 1px goldenrod;
+        }
+        .rate-area > label:active {
+          position: relative;
+        }
+
+        &-text {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          textarea {
+            border: 2px solid $main-red;
+            border-radius: 10px;
+            padding: 10px;
+            width: 60%;
+          }
+          textarea::placeholder {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+
+        &-btn {
+          button {
+            border: none;
+            background-color: $main-red;
+            padding: 10px;
+            width: 125px;
+            color: white;
+            border-radius: 25px;
+            font-family: 'IBX400', Arial, Helvetica, sans-serif;
+          }
+        }
+      }
+    }
+  }
+}

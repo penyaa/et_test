@@ -1,0 +1,128 @@
+.tickets {
+  margin-top: 100px;
+  &__container {
+    margin-bottom: 10px;
+    &-title {
+      margin-top: 40px;
+      h4 {
+        color: $footer;
+      }
+    }
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+
+      &-img {
+        img {
+          border-radius: 15px;
+          width: 200px;
+        }
+      }
+
+      &-text {
+        width: 70%;
+
+        &-untitle {
+          p {
+            color: $footer;
+            font-size: 0.7em;
+          }
+          p:last-child {
+            margin-top: -10px;
+          }
+        }
+      }
+
+      &-btn {
+        align-self: flex-end;
+        margin-bottom: 15px;
+
+        button {
+          background-color: $main-red;
+          border: none;
+          border-radius: 25px;
+          padding: 10px 5px 10px 5px;
+
+          a {
+            color: white;
+            font-weight: 400;
+            font-size: 0.875em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tickets {
+    padding: 0;
+    &__title {
+      margin-top: -35px;
+      text-align: center;
+      color: $main-red;
+    }
+    &__container {
+      width: 100%;
+      margin-bottom: 10px;
+      &-title {
+        margin-top: 40px;
+        h4 {
+          text-align: center;
+          color: $footer;
+        }
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        &-img {
+          img {
+            width: 100%;
+          }
+        }
+
+        &-text {
+          text-wrap: wrap;
+
+          &-title {
+            width: 100%;
+            text-align: center;
+          }
+
+          &-untitle {
+            p {
+              color: $footer;
+              font-size: 0.7em;
+            }
+            p:last-child {
+              margin-top: -10px;
+            }
+          }
+        }
+
+        &-btn {
+          align-self: flex-end;
+          margin-top: -55px;
+          margin-right: 15px;
+
+          button {
+            background-color: white;
+            border: 2px solid $main-red;
+            border-radius: 10px;
+            padding: 7px 3px 7px 3px;
+
+            a {
+              color: black;
+              font-weight: 400;
+              font-size: 0.7em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

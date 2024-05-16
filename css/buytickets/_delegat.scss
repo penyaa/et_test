@@ -1,0 +1,64 @@
+.buy__tickets-delegat {
+  margin-top: 20%;
+  &-title {
+    text-align: center;
+    h3 {
+      color: $main-red;
+    }
+  }
+
+  &-container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    flex-wrap: wrap;
+    align-items: left;
+    &-item {
+      width: 100%;
+      display: flex;
+      gap: 3%;
+      align-items: center;
+      img {
+        width: 4%;
+      }
+      p {
+        width: 65%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .buy__tickets-delegat {
+    margin-top: 20px;
+    &-title {
+      text-align: center;
+      h3 {
+        color: $main-red;
+      }
+    }
+
+    &-container {
+      margin-top: 5%;
+      display: block;
+      flex-direction: column;
+      margin-left: 0;
+      flex-wrap: wrap;
+      align-items: left;
+      &-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        align-items: center;
+        img {
+          width: 10%;
+        }
+        p {
+          width: 65%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.buy__tickets-take-program {
+  h4 {
+    text-align: center;
+    margin-bottom: 80px;
+    color: $main-red;
+  }
+
+  &-input {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+
+    input {
+      padding: 10px;
+      width: 30%;
+      border-radius: 5px;
+      border: 2px solid $main-red;
+    }
+
+    input::placeholder {
+      font-size: 0.8em;
+      font-family: 'IBX400', Arial, Helvetica, sans-serif;
+    }
+
+    button {
+      background-color: $main-red;
+      border: none;
+      padding: 0px 25px 0px 25px;
+      color: white;
+      font-family: 'IBX600', Arial, Helvetica, sans-serif;
+      font-size: 0.7em;
+      border-radius: 25px;
+    }
+  }
+
+  .programm-error {
+    text-align: center;
+    padding-top: 10px;
+    color: $main-red;
+  }
+
+  p {
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: 30px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .buy__tickets-take-program {
+    h4 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: $main-red;
+    }
+
+    &-input {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 5px;
+      width: 100%;
+
+      input {
+        padding: 10px;
+        width: 40%;
+        border-radius: 5px;
+        border: 2px solid $main-red;
+      }
+
+      input::placeholder {
+        font-size: 0.8em;
+        font-family: 'IBX400', Arial, Helvetica, sans-serif;
+      }
+
+      button {
+        background-color: $main-red;
+        border: none;
+        padding: 0px 25px 0px 25px;
+        color: white;
+        font-family: 'IBX600', Arial, Helvetica, sans-serif;
+        font-size: 0.7em;
+        border-radius: 25px;
+        width: 40%;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-size: 0.7em;
+      margin-top: 30px;
+      line-height: 1.5;
+    }
+  }
+}

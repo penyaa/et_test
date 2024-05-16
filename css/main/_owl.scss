@@ -1,0 +1,219 @@
+.main__reviews {
+  margin-top: 70px;
+  &-title {
+    margin-bottom: 30px;
+  }
+}
+#carouselOne {
+  .owl-carousel {
+    margin-top: 50px;
+  }
+  .owl-carousel-item {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: $main-red;
+    &-title {
+      display: flex;
+      align-items: center;
+
+      p {
+        align-self: center;
+        padding-top: 20px;
+      }
+
+      img {
+        padding: 20px;
+        border-radius: 150px;
+        align-self: center;
+      }
+    }
+    &-text {
+      background-color: white;
+      border-radius: 15px;
+      p {
+        padding: 10px;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .owl-prev,
+  .owl-next {
+    span {
+      background-color: $main-red;
+      padding: 0px 15px 4px 15px;
+      font-size: 2em;
+      border-radius: 50px;
+      color: white;
+    }
+  }
+
+  .owl-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 105%;
+    left: 90%;
+  }
+}
+
+.main__photoreport {
+  margin-top: 100px;
+  &-title {
+    margin-bottom: 30px;
+  }
+}
+
+#carouselTwo {
+  .item {
+    img {
+      border-radius: 15px;
+      height: 350px;
+    }
+  }
+
+  .owl-prev,
+  .owl-next {
+    span {
+      background-color: $main-red;
+      padding: 0px 15px 4px 15px;
+      font-size: 2em;
+      border-radius: 50px;
+      color: white;
+    }
+  }
+
+  .owl-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 105%;
+    left: 90%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  #carouselOne,
+  #carouselTwo {
+    .owl-nav {
+      position: absolute;
+      right: 0;
+      bottom: 100%;
+      left: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__reviews {
+    padding: 0;
+    margin-top: -20px;
+    &-title {
+      text-align: center;
+      margin-bottom: 30px;
+      h4 {
+        font-size: 1.6em;
+        color: $main-red;
+      }
+    }
+  }
+  #carouselOne {
+    .owl-carousel {
+      margin-top: 50px;
+    }
+    .owl-carousel-item {
+      border-radius: 0px;
+      height: auto;
+      padding: 30px;
+      padding-bottom: 45px;
+      background-color: $main-red;
+      &-title {
+        display: flex;
+        align-items: center;
+
+        p {
+          color: white;
+          height: auto;
+          align-self: center;
+          padding-top: 20px;
+        }
+
+        img:first-child {
+          padding: 20px;
+          border-radius: 150px;
+          align-self: center;
+        }
+
+        img:last-child {
+          display: none;
+        }
+      }
+      &-text {
+        background-color: white;
+        border-radius: 15px;
+        p {
+          padding: 10px;
+          line-height: 1.2;
+        }
+      }
+    }
+
+    .owl-prev,
+    .owl-next {
+      span {
+        background-color: $text;
+        padding: 0px 15px 4px 15px;
+        font-size: 2em;
+        border-radius: 50px;
+        color: white;
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      right: 0;
+      bottom: 3%;
+      left: 70%;
+    }
+  }
+
+  .main__photoreport {
+    padding: 0;
+    margin-top: 100px;
+    &-title {
+      width: 100%;
+      margin-top: -50px;
+      text-align: center;
+      margin-bottom: 30px;
+      h4 {
+        color: $main-red;
+      }
+    }
+  }
+
+  #carouselTwo {
+    .item {
+      img {
+        height: 300px;
+      }
+    }
+
+    .owl-prev,
+    .owl-next {
+      span {
+        background-color: $main-red;
+        padding: 0px 15px 4px 15px;
+        font-size: 2em;
+        border-radius: 50px;
+        color: white;
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      right: 0;
+      bottom: 5%;
+      left: 70%;
+    }
+  }
+}

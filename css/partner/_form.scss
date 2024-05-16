@@ -1,0 +1,228 @@
+.partner__form-1 {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      width: 100%;
+      p:first-child {
+        width: 80%;
+        font-size: 1.5em;
+      }
+      p:last-child {
+        line-height: 1.7;
+        font-size: 0.875em;
+        width: 50%;
+      }
+    }
+
+    &-data {
+      width: 100%;
+      .partner-name-error-1,
+      .partner-email-error-1,
+      .partner-tel-error-1,
+      .partner-company-error-1 {
+        font-size: 0.7em;
+        color: $main-red;
+        padding-bottom: 10px;
+        margin-top: -20px;
+      }
+
+      input {
+        margin-bottom: 30px;
+        padding: 5px;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid black;
+      }
+      input::placeholder {
+        color: black;
+      }
+
+      .flex {
+        display: flex;
+        gap: 10px;
+        width: 102%;
+      }
+
+      button {
+        background-color: $main-red;
+        padding: 10px 20px 10px 20px;
+        color: white;
+        border: none;
+        border-radius: 25px;
+      }
+
+      p {
+        font-size: 0.7em;
+        color: $footer;
+
+        a {
+          color: $footer;
+          text-decoration: underline;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.partner__form-2 {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      width: 100%;
+      p:first-child {
+        width: 80%;
+        font-size: 1.5em;
+      }
+      p:last-child {
+        line-height: 1.7;
+        font-size: 0.875em;
+        width: 50%;
+      }
+    }
+
+    &-data {
+      width: 100%;
+      .partner-name-error-2,
+      .partner-email-error-2,
+      .partner-tel-error-2,
+      .partner-company-error-2,
+      .partner-event-error-2 {
+        font-size: 0.7em;
+        color: $main-red;
+        padding-bottom: 10px;
+        margin-top: -20px;
+      }
+      input {
+        margin-bottom: 30px;
+        padding: 5px;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid black;
+      }
+      input::placeholder {
+        color: black;
+      }
+
+      .flex {
+        display: flex;
+        gap: 10px;
+        width: 102%;
+      }
+
+      button {
+        background-color: $main-red;
+        padding: 10px 20px 10px 20px;
+        color: white;
+        border: none;
+        border-radius: 25px;
+      }
+
+      p {
+        font-size: 0.7em;
+        color: $footer;
+
+        a {
+          color: $footer;
+          text-decoration: underline;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partner__form-1 {
+    display: none;
+  }
+
+  .partner__form-2 {
+    width: 100%;
+    padding: 0;
+    &-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      &-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p:first-child {
+          width: 80%;
+          font-size: 1.5em;
+        }
+        p:last-child {
+          line-height: 1.7;
+          font-size: 0.875em;
+          width: 50%;
+        }
+      }
+
+      &-data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin-right: 20px;
+        .partner-name-error-2,
+        .partner-email-error-2,
+        .partner-tel-error-2,
+        .partner-company-error-2,
+        .partner-event-error-2 {
+          font-size: 0.7em;
+          color: $main-red;
+          padding-bottom: 10px;
+          margin-top: -10px;
+          width: 100%;
+        }
+        input {
+          margin-bottom: 30px;
+          padding: 10px;
+          width: 100%;
+          border: 2px solid $main-red;
+          border-radius: 10px;
+        }
+        input::placeholder {
+          color: black;
+        }
+
+        .flex {
+          display: block;
+          gap: 10px;
+          width: 100%;
+        }
+
+        button {
+          background-color: $main-red;
+          padding: 10px 20px 10px 20px;
+          color: white;
+          border: none;
+          border-radius: 25px;
+          margin-left: 25px;
+        }
+
+        p {
+          font-size: 0.7em;
+          color: $footer;
+
+          a {
+            color: $footer;
+            text-decoration: underline;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

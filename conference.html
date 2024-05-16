@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Event Today</title>
+  </head>
+  <body>
+    <header>
+        <section class="main">
+          <div class="main__logo">
+            <a href="index.html"><img src="assets/logo/logo.png" alt="logo" /></a>
+          </div>
+          <div class="main__links">
+            <ul>
+              <li><a href="index.html">Календарь</a></li>
+              <li><a href="tickets.html">Билеты</a></li>
+              <li><a href="company.html">О компании</a></li>
+              <li><a href="archive.html">Архив</a></li>
+              <li><a href="partner.html">Партнерам</a></li>
+            </ul>
+          </div>
+          <div class="main__reg">
+            <button id="myBtn">Регистрация</button>
+            <a href="registration.html"
+              ><img src="assets/icons/Vector.png" alt="pic"
+            /></a>
+          </div>
+  
+          <div class="menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+              <li><a class="menu-item" href="index.html">Календарь</a></li>
+              <li><a class="menu-item" href="tickets.html">Билеты</a></li>
+              <li><a class="menu-item" href="company.html">О компании</a></li>
+              <li><a class="menu-item" href="archive.html">Архив</a></li>
+              <li><a class="menu-item" href="partner.html">Партнерам</a></li>
+            </ul>
+          </div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="registration__form">
+                <div class="registration__form-title">
+                  <h2>Регистрация</h2>
+                </div>
+                <form>
+                  <div class="registration__form-input">
+                    <div>
+                      <input type="text" placeholder="Фамилия" />
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Имя" />
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Адрес электронной почты" />
+                    </div>
+                    <div class="registration__form-input-tel">
+                      <label for="reg-tel">Номер телефона</label>
+                      <input
+                        id="reg-tel"
+                        type="tel"
+                        placeholder="+7 777 777 77 77"
+                      />
+                    </div>
+                    <div class="signin__form-input-password">
+                      <input
+                        class="sign-password"
+                        type="password"
+                        placeholder="Пароль"
+                      />
+                    </div>
+                  </div>
+                  <div class="registration__form-btn">
+                    <button>Завершить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+    <main>
+      <section class="buy__tickets-image">
+        <img src="assets/other/pic1.jpg" alt="pic1" />
+      </section>
+
+      <section class="buy__tickets-top">
+        <div class="buy__tickets-top-title">
+          <h2>
+            Развитие отрасли <br />
+            беспилотной авиации России
+          </h2>
+          <div>
+            <p>Форсайт-сессия</p>
+            <p>22 апреля 2024 года</p>
+          </div>
+
+          
+        </div>
+        <div class="buy__tickets-top-text">
+          <p>
+            В течение ближайших шести с половиной лет в России должна появиться
+            новая отрасль экономики, связанная с созданием и использованием
+            гражданских беспилотников. Такова главная цель Стратегии развития
+            беспилотной авиации до 2030 года и на перспективу до 2035 года.
+            <span>Распоряжение</span> о её утверждении подписано. Наибольший
+            потенциал для применения беспилотников имеется в сельском хозяйстве,
+            строительном надзоре, создании и актуализации геопространственных
+            баз данных и доставке грузов в труднодоступные районы.
+          </p>
+        </div>
+      </section>
+      <section class="buy__tickets-top-mob">
+        <div class="buy__tickets-top-mob-title">
+          <h2>
+            Развитие отрасли <br />
+            беспилотной авиации России
+          </h2>
+          <div class="buy__tickets-top-mob-text">
+            <p>
+              В течение ближайших шести с половиной лет в России должна появиться
+              новая отрасль экономики, связанная с созданием и использованием
+              гражданских беспилотников. Такова главная цель Стратегии развития
+              беспилотной авиации до 2030 года и на перспективу до 2035 года.
+              <span>Распоряжение</span> о её утверждении подписано. Наибольший
+              потенциал для применения беспилотников имеется в сельском хозяйстве,
+              строительном надзоре, создании и актуализации геопространственных
+              баз данных и доставке грузов в труднодоступные районы.
+            </p>
+          </div>
+          <div class="buy__tickets-top-mob-container">
+            <div class="buy__tickets-top-mob-container-item1">
+                <p>Форсайт-сессия</p>
+                <p>22 апреля 2024 года</p>
+            </div>
+            <div class="buy__tickets-top-mob-container-item2">
+               <button><a href="tickets.html">Купить билет</a></button> 
+            </div>
+          </div>
+      </section>
+
+      <section class="buy__tickets-line">
+        <div class="owl-carousel owl-theme" id="carouselTwelve">
+          <div>СТРАТЕГИЯ • 2030 •</div>
+          <div>СТРАТЕГИЯ • 2030 •</div>
+          <div>СТРАТЕГИЯ • 2030 •</div>
+          <div>СТРАТЕГИЯ • 2030 •</div>
+          <div>СТРАТЕГИЯ • 2030 •</div>
+          <div>СТРАТЕГИЯ • 2030 •</div>
+          <div>СТРАТЕГИЯ • 2030 •</div>
+          <div>СТРАТЕГИЯ • 2030 •</div>
+          <div>СТРАТЕГИЯ • 2030 •</div>
+          <div>СТРАТЕГИЯ • 2030 •</div>
+        </div>
+      </section>
+
+      <section class="buy__tickets-about">
+        <h3>О мероприятии</h3>
+        <div class="buy__tickets-about-container">
+          <div class="buy__tickets-about-container-item">
+            <h4>На повестке:</h4>
+            <p>
+              Ипортозамещение в сфере двигателестроения и микроэлектроники,
+              решение вопроса по сертификации БПЛА и правовому регулированию
+              сферы БАС, подготовка и привлечение кадров в беспилотной отрасли.
+            </p>
+          </div>
+          <div class="buy__tickets-about-container-item">
+            <h4>Формат:</h4>
+            <p>Кейс-доклады спикеров, вопрос-ответ, public talk</p>
+          </div>
+          <div class="buy__tickets-about-container-item">
+            <h4>Аудитория:</h4>
+            <p>
+              Эксперты рынка, представители топ-менеджмента ведущих транспортных
+              компаний, транспортных операторов и смежных отраслей,
+              компании-производители и эксплуатанты БПЛА, интеграторы цифровых
+              платформ и ИТ-сервисов, поставщики аппаратных и программных
+              решений, а также представители представители профильных
+              ассоциаций, министерств и ведомств, СМИ.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="buy__tickets-timetable">
+        <div class="buy__tickets-timetable-title">
+          <h4>Расписание форсайт-сессии</h4>
+          <p>22 апреля 2024 года, Swisshotel Красные Холмы</p>
+        </div>
+        <div class="buy__tickets-timetable-items">
+          <div class="buy__tickets-timetable-items-item">
+            <p>09:20 - 10:00</p>
+            <p>Регистрация участников, приветственный кофе</p>
+          </div>
+
+          <div class="buy__tickets-timetable-items-item item-red">
+            <p>10:00 - 11:15</p>
+            <p>Сессия I</p>
+          </div>
+
+          <div class="buy__tickets-timetable-items-item">
+            <p>11:15 – 11:30</p>
+            <p>Обмен мнениями, перерыв</p>
+          </div>
+
+          <div class="buy__tickets-timetable-items-item item-red">
+            <p>11:30 – 12:30</p>
+            <p>Сессия II</p>
+          </div>
+
+          <div class="buy__tickets-timetable-items-item">
+            <p>12:30 – 13:00</p>
+            <p>Бизнес-бранч</p>
+          </div>
+
+          <div class="buy__tickets-timetable-items-item item-red">
+            <p>13:00 – 14:00</p>
+            <p>Сессия III</p>
+          </div>
+
+          <div class="buy__tickets-timetable-items-item">
+            <p>14:00 – 14:15</p>
+            <p>Обмен мнениями, перерыв</p>
+          </div>
+
+          <div class="buy__tickets-timetable-items-item item-red">
+            <p>14:15 – 15:15</p>
+            <p>Открытый диалог</p>
+          </div>
+
+          <div class="buy__tickets-timetable-items-item">
+            <p>15:15 – 15:30</p>
+            <p>Переговоры, закрытие сессии</p>
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="buy__tickets-experts">
+        <div class="buy__tickets-experts-title">
+          <h3>Спикеры и эксперты</h3>
+        </div>
+        <div class="buy__tickets-experts-columns">
+          <div class="buy__tickets-experts-columns-1 column">
+            <img src="assets/team/team12.jpg" alt="team" />
+            <h4>Михаил Куприянов</h4>
+            <p class="color-red">Спикер</p>
+            <p>
+              Руководитель перспективных проектов, заведующий кафедрой
+              вычислительной техники Санкт-Петербургского государственного
+              электротехнического университета <span>«ЛЭТИ»</span>
+            </p>
+            <div>
+              <a href="#"><img src="assets/icons/site.png" alt="icon" /></a>
+            </div>
+          </div>
+
+          <div class="buy__tickets-experts-columns-2 column">
+            <img src="assets/team/team7.jpg" alt="team" />
+            <h4>Анна Ильина</h4>
+            <p class="color-red">Спикер</p>
+            <p>
+              Директор Российского научно-исследовательского института
+              экономики, политики и права в научно-технической сфере
+              (<span>РИЭПП</span>), д.э.н.
+            </p>
+            <div></div>
+          </div>
+
+          <div class="buy__tickets-experts-columns-3 column">
+            <img src="assets/team/team8.jpg" alt="team" />
+            <h4>Умар Дадашев</h4>
+            <p class="color-red">Спикер</p>
+            <p>
+              Начальник отдела инновационного развития, ФГБОУ ВО
+              <span
+                >«Чеченский государственный университет имени А.А.
+                Кадырова»</span
+              >
+            </p>
+            <div>
+              <a href="#"><img src="assets/icons/site.png" alt="icon" /></a>
+            </div>
+          </div>
+
+          <div class="buy__tickets-experts-columns-4 column">
+            <img src="assets/team/team9.jpg" alt="team" />
+            <h4>Александр МИхайленко</h4>
+            <p class="color-red">Спикер</p>
+            <p>Генеральный директор <span>ООО «НПК Антей» – Redfab</span></p>
+            <div>
+              <a href="#"><img src="assets/icons/site.png" alt="icon" /></a>
+            </div>
+          </div>
+
+          <div class="buy__tickets-experts-columns-5 column">
+            <img src="assets/team/team10.jpg" alt="team" />
+            <h4>Людмила Гонтарь</h4>
+            <p class="color-red">Эксперт-модератор</p>
+            <p>
+              Руководитель проектного офиса Дирекция
+              <span>«Аэродинамика»</span>
+              (прав.комиссия), руководитель комитета по искусственному
+              интеллекту <span>АНО ГЛОНАС</span>, руководитель Центра
+              предиктивной аналитики <span>РИЭПП и специальным проектам</span>,
+              эксперт федеральных и региональных групп и комиссии
+              <span>ТПП РФ</span>
+            </p>
+          </div>
+
+          <div class="buy__tickets-experts-columns-6 column">
+            <img src="assets/team/team11.jpg" alt="team" />
+            <h4>Ольга Побегаева</h4>
+            <p class="color-red">Спикер</p>
+            <p>
+              Директор юридической компании <span>«Сфера Права»</span>,
+              антикризисный менеджер, партнер по правовым вопросам компании
+              <span>«Ти Хантер»</span>
+            </p>
+            <div>
+              <a href="#"><img src="assets/icons/site.png" alt="icon" /></a>
+              <a href="#"><img src="assets/icons/telegram.png" alt="icon" /></a>
+              <a href="#"><img src="assets/icons/youtube.png" alt="icon" /></a>
+              <a href="#"><img src="assets/icons/vk.png" alt="icon" /></a>
+            </div>
+          </div>
+
+          <div class="buy__tickets-experts-columns-7 column">
+            <img src="assets/team/team13.jpg" alt="team" />
+            <h4>Мария Образцова</h4>
+            <p class="color-red">Спикер</p>
+            <p>
+              Директор Института дополнительного образования АНО ВО
+              <span>«Университета Иннополис»</span>
+            </p>
+            <div>
+              <a href="#"><img src="assets/icons/site.png" alt="icon" /></a>
+            </div>
+          </div>
+
+          <div class="buy__tickets-experts-columns-8 column">
+            <img src="assets/team/team14.jpg" alt="team" />
+            <h4>Михаил Белов</h4>
+            <p class="color-red">Спикер</p>
+            <p>
+              Профессор кафедры Робототехники и автоматизации производственных
+              систем СПбГЭТУ <span>«ЛЭТИ»</span> и Информационных управляющих
+              систем <span>СПбГУТ</span>, академик АЭН РФ, д.т.н., профессор
+            </p>
+            <div>
+              <a href="#"><img src="assets/icons/site.png" alt="icon" /></a>
+              <a href="#"><img src="assets/icons/youtube.png" alt="icon" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="buy__tickets-experts-mob">
+        <div class="owl-carousel owl-theme" id="carouselFive">
+          <div>
+            <img src="assets/team/team12.jpg" alt="team" />
+            <h4>Михаил Куприянов</h4>
+            <p class="color-red">Спикер</p>
+            <p>
+              Руководитель перспективных проектов, заведующий кафедрой
+              вычислительной техники Санкт-Петербургского государственного
+              электротехнического университета <span>«ЛЭТИ»</span>
+            </p>
+            <div class="image">
+              <a href="#"><img src="assets/icons/site.png" alt="icon" /></a>
+            </div>
+            </div>
+
+            <div>
+              <img src="assets/team/team7.jpg" alt="team" />
+              <h4>Анна Ильина</h4>
+              <p class="color-red">Спикер</p>
+              <p>
+                Директор Российского научно-исследовательского института
+                экономики, политики и права в научно-технической сфере
+                (<span>РИЭПП</span>), д.э.н.
+              </p>
+              <div></div>
+            </div>
+
+            <div>
+              <img src="assets/team/team8.jpg" alt="team" />
+              <h4>Умар Дадашев</h4>
+              <p class="color-red">Спикер</p>
+              <p>
+                Начальник отдела инновационного развития, ФГБОУ ВО
+                <span
+                  >«Чеченский государственный университет имени А.А.
+                  Кадырова»</span
+                >
+              </p>
+              <div class="image">
+                <a href="#"><img src="assets/icons/site.png" alt="icon" /></a>
+              </div>
+            </div>
+
+            <div>
+              <img src="assets/team/team9.jpg" alt="team" />
+              <h4>Александр МИхайленко</h4>
+              <p class="color-red">Спикер</p>
+              <p>Генеральный директор <span>ООО «НПК Антей» – Redfab</span></p>
+              <div class="image">
+                <a href="#"><img src="assets/icons/site.png" alt="icon" /></a>
+              </div>
+            </div>
+
+            <div>
+              <img src="assets/team/team10.jpg" alt="team" />
+              <h4>Людмила Гонтарь</h4>
+              <p class="color-red">Эксперт-модератор</p>
+              <p>
+                Руководитель проектного офиса Дирекция
+                <span>«Аэродинамика»</span>
+                (прав.комиссия), руководитель комитета по искусственному
+                интеллекту <span>АНО ГЛОНАС</span>, руководитель Центра
+                предиктивной аналитики
+                <span>РИЭПП и специальным проектам</span>, эксперт федеральных и
+                региональных групп и комиссии
+                <span>ТПП РФ</span>
+              </p>
+            </div>
+
+            <div>
+              <img src="assets/team/team11.jpg" alt="team" />
+              <h4>Ольга Побегаева</h4>
+              <p class="color-red">Спикер</p>
+              <p>
+                Директор юридической компании <span>«Сфера Права»</span>,
+                антикризисный менеджер, партнер по правовым вопросам компании
+                <span>«Ти Хантер»</span>
+              </p>
+              <div class="image">
+                <a href="#"><img src="assets/icons/site.png" alt="icon" /></a>
+                <a href="#"
+                  ><img src="assets/icons/telegram.png" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="assets/icons/youtube.png" alt="icon"
+                /></a>
+                <a href="#"><img src="assets/icons/vk.png" alt="icon" /></a>
+              </div>
+            </div>
+
+            <div>
+              <img src="assets/team/team13.jpg" alt="team" />
+              <h4>Мария Образцова</h4>
+              <p class="color-red">Спикер</p>
+              <p>
+                Директор Института дополнительного образования АНО ВО
+                <span>«Университета Иннополис»</span>
+              </p>
+              <div class="image">
+                <a href="#"><img src="assets/icons/site.png" alt="icon" /></a>
+              </div>
+            </div>
+
+            <div>
+              <img src="assets/team/team14.jpg" alt="team" />
+              <h4>Михаил Белов</h4>
+              <p class="color-red">Спикер</p>
+              <p>
+                Профессор кафедры Робототехники и автоматизации производственных
+                систем СПбГЭТУ <span>«ЛЭТИ»</span> и Информационных управляющих
+                систем <span>СПбГУТ</span>, академик АЭН РФ, д.т.н., профессор
+              </p>
+              <div class="image">
+                <a href="#"><img src="assets/icons/site.png" alt="icon" /></a>
+                <a href="#"
+                  ><img src="assets/icons/youtube.png" alt="icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="buy__tickets-info-partners">
+        <div class="buy__tickets-info-partners-1">
+          <h3>Главный Информационный Партнер</h3>
+          <div class="buy__tickets-info-partners-1-container">
+            <div class="buy__tickets-info-partners-1-container-item-1">
+              <img src="assets/icons/3.png" alt="icon" />
+            </div>
+            <div class="buy__tickets-info-partners-1-container-item-2">
+              <p>
+                <span>Проект «Берза»</span> — инофрмационный портал про высокие
+                технологии.
+              </p>
+              <p>
+                Искусственный интеллект и машинное обучение, чат-боты и
+                голосовые ассистенты, роботы и дроны, виртуальная и дополненная
+                реальность.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="buy__tickets-info-partners-2">
+          <h3>Партнеры сессии</h3>
+          <div class="buy__tickets-info-partners-2-container">
+            <div class="buy__tickets-info-partners-2-container-1">
+              <img src="assets/icons/2.jpg" alt="icon" />
+              <p>Стратегический консалтинг – услуги по всей России</p>
+              <h4>СФЕРА ПРАВА</h4>
+              <p>
+                Мы позиционируем себя как стратегический консалтинг, а именно
+                предоставляем правовую поддержку на долгосрочной основе с
+                глубоким погружением в процессы компании и ее сферы
+                деятельности.
+              </p>
+            </div>
+
+            <div class="buy__tickets-info-partners-2-container-2">
+              <img src="assets/icons/4.jpg" alt="icon" />
+              <p>
+                Российский разработчик и производитель специального
+                промышленного оборудования для 3D-печати
+              </p>
+              <h4>REDFAB</h4>
+
+              <p>
+                ООО «НПК АНТЕЙ» <br />Мы оказываем услуги контрактного
+                производства полного цикла, начиная от реверс-инжиниринга
+                деталей до оптимизации и постановки изделия в производство на
+                собственных мощностях.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="buy__tickets-media-partner">
+        <div class="buy__tickets-media-partner-title">
+          <h3>Главный Медиа Партнер</h3>
+        </div>
+        <div class="buy__tickets-media-partner-item">
+          <img src="assets/icons/1.jpg.jpg" alt="icon" />
+          <p>
+            Всероссийская еженедельная газета <span>«ТранспортРоссии»</span>
+            —официальный печатный орган Министерства транспорта Российской
+            Федерации — учреждена в 1998 году.
+          </p>
+        </div>
+      </section>
+
+      <section class="buy__tickets-contact-us">
+        <div class="buy__tickets-contact-us-1">
+          <p>
+            Свяжитесь с нами по любым вопросам, мы всегда рады общению и
+            сотрудничеству.
+          </p>
+        </div>
+        <div class="buy__tickets-contact-us-2">
+          <h4>Центр конференций СЕГОДНЯ</h4>
+        </div>
+        <div class="buy__tickets-contact-us-3">
+          <h5>По вопросам программы и регистрации участников:</h5>
+          <p>+7 951 414 22 13 <a href="#">cc@eventtoday.biz</a></p>
+        </div>
+        <div class="buy__tickets-contact-us-4">
+          <h5>Работа с информационными партнерами и аккредитация СМИ:</h5>
+          <p>Светлана Барцева <a href="#">s.barceva@eventtoday.biz</a></p>
+        </div>
+      </section>
+
+      <section class="buy__tickets-options">
+        <div class="buy__tickets-options-title">
+          <h3>Варинаты участия</h3>
+        </div>
+        <div class="buy__tickets-options-table">
+          <table>
+            <tr class="table-1">
+              <td>ОПЦИИ</td>
+              <td>Делегат</td>
+              <td>Стендист</td>
+              <td>Партнер</td>
+              <td>Материалы</td>
+            </tr>
+
+            <tr class="table-all">
+              <td>
+                Участие в качестве делегата в деловой программе очно с
+                возможностью задавать вопросы спикерам и принимать участие в
+                дискуссии
+              </td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/no.png" alt="icon" /></td>
+            </tr>
+
+            <tr class="table-all">
+              <td>
+                Предварительный заказ переговорных комнат и другие Партнерские
+                опции
+              </td>
+              <td><img src="assets/icons/no.png" alt="icon" /></td>
+              <td><img src="assets/icons/no.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/no.png" alt="icon" /></td>
+            </tr>
+
+            <tr class="table-all">
+              <td>Кофе-брейки, активный нетворкинг</td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/no.png" alt="icon" /></td>
+            </tr>
+
+            <tr class="table-all">
+              <td>Материалы по итогам встречи - презентации, видеозапись</td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+            </tr>
+
+            <tr class="table-all">
+              <td>Сертификат участника</td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/no.png" alt="icon" /></td>
+            </tr>
+
+            <tr class="table-all">
+              <td>Фото-материал, пост- релиз</td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+            </tr>
+
+            <tr class="table-all">
+              <td>
+                Предоставление площадки для эксклюзивного позиционирования на
+                конференции
+              </td>
+              <td><img src="assets/icons/no.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/yes.png" alt="icon" /></td>
+              <td><img src="assets/icons/no.png" alt="icon" /></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="buy__tickets-info-media-partners">
+        <div class="buy__tickets-info-media-partners-title">
+          <h3>Официальные Инфо и Медиа Партнеры</h3>
+        </div>
+        <div class="buy__tickets-info-media-partners-items">
+          <img src="assets/icons/20.png" alt="icon" />
+          <img src="assets/icons/21.png" alt="icon" />
+          <img src="assets/icons/22.png" alt="icon" />
+          <img src="assets/icons/23.png" alt="icon" />
+          <img src="assets/icons/24.png" alt="icon" />
+        </div>
+      </section>
+
+      <section class="buy__tickets-sponsor">
+        <div class="buy__tickets-sponsor-title">
+          <h3>Медиа-спонсор трансляций СЕГОДНЯ</h3>
+        </div>
+        <div class="buy__tickets-sponsor-item">
+          <div class="buy__tickets-sponsor-item-img">
+            <img src="assets/icons/35.png" alt="icon" />
+          </div>
+          <div class="buy__tickets-sponsor-item-container">
+            <h4>JsonTV</h4>
+            <p>
+              О канале <br />
+              <a href="#">JSON.TV</a> (прогнозы, стратегия, развитие Hi-Tech
+              рынков). <br />
+              <a href="#">JSON.TV</a> – специализированная PR-площадка для
+              продвижения проектов, компаний, брендов, технологий. <br />
+              <a href="#">JSON.TV</a> – телеканал про Технологии, инвестиции,
+              инновации.
+            </p>
+          </div>
+        </div>
+        <div class="buy__tickets-sponsor-title">
+          <h3>При поддержке и участии</h3>
+        </div>
+        <div class="buy__tickets-sponsor-item">
+          <div class="buy__tickets-sponsor-item-img">
+            <img src="assets/icons/40.png" alt="icon" />
+          </div>
+          <div class="buy__tickets-sponsor-item-container">
+            <h4>Ассоциация РУССОФТ</h4>
+            <p>
+              РУССОФТ является наиболее влиятельным объединением
+              компаний-разработчиков программного обеспечения России. На 2024
+              год объединяет более 330 ИТ-компаний со штатом более 85 000
+              высококвалифицированных сотрудников.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="buy__tickets-info-support">
+        <h3>Информационная поддержка</h3>
+        <div class="owl-carousel owl-theme" id="carouselFour">
+          <div><img src="assets/icons/13.png" alt="icon" /></div>
+          <div><img src="assets/icons/15.png" alt="icon" /></div>
+          <div><img src="assets/icons/17.png" alt="icon" /></div>
+          <div><img src="assets/icons/18.png" alt="icon" /></div>
+          <div><img src="assets/icons/19.png" alt="icon" /></div>
+          <div><img src="assets/icons/26.png" alt="icon" /></div>
+          <div><img src="assets/icons/27.png" alt="icon" /></div>
+          <div><img src="assets/icons/28.png" alt="icon" /></div>
+          <div><img src="assets/icons/37.png" alt="icon" /></div>
+          <div><img src="assets/icons/39.png" alt="icon" /></div>
+          <div><img src="assets/icons/31.png.png" alt="icon" /></div>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+        <div class="footer__container">
+          <div class="footer__container-1">
+            <div><img src="assets/logo/logo.png" alt="logo" /></div>
+            <div>
+              <div>
+                Профессиональная <br />организация конференций<br />
+                любой сложности в Москве.
+              </div>
+              <div>Социальные сети</div>
+              <div>
+                <a href="#"
+                  ><img src="assets/icons/youtube.png" alt="youtube"
+                /></a>
+                <a href="#"
+                  ><img src="assets/icons/telegram.png" alt="telegram"
+                /></a>
+                <a href="#"><img src="assets/icons/dzen.png" alt="yadzen" /></a>
+              </div>
+              <div>Реквизиты компании</div>
+              <div>ИП Лючина Татьяна Изосимовна</div>
+              <div>ИНН: 550305019040</div>
+              <div>ОГРН/ОГРНИП: 323554300023500</div>
+            </div>
+          </div>
+          <div class="footer__container-2">
+            <div>
+              <ul>
+                <li><a href="index.html">Календарь</a></li>
+                <li><a href="tickets.html">Билеты</a></li>
+                <li><a href="company.html">О компании</a></li>
+                <li><a href="archive.html">Архив</a></li>
+                <li><a href="partner.html">Партнерам</a></li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <h4>ПРОГРАММНАЯ ДИРЕКЦИЯ <br />ДЕЛОВЫХ ВСТРЕЧ</h4>
+                <p>
+                  Екатерина Головченко<br />
+                  eg@eventtoday.biz <br />
+                  Тема письма: Выступление спикера <br />[тема мероприятия или
+                  доклада]
+                </p>
+              </div>
+              <div>
+                <h4>ПО ВОПРОСАМ ПАРТНЕРСТВА И <br />РАЗМЕЩЕНИЯ СТЕНДОВ</h4>
+                <p>
+                  +7 (951) 414-22-13 <br />
+                  cc@eventtoday.biz <br />
+                  Тема письма: Продвижение <br />компании [название вашей
+                  <br />компании]
+                </p>
+              </div>
+              <div>
+                <h4>
+                  ДЛЯ ИНФОРМАЦИОННЫХ<br />
+                  СПОНСОРОВ И СМИ
+                </h4>
+                <p>
+                  Светлана Барцева <br />
+                  s.barceva@eventtoday.biz <br />
+                  Тема письма: Информационная<br />
+                  поддержка | Аккредитация СМИ <br />[название мероприятия]
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer__container-end">
+          <div>© EventСегодня, 2024</div>
+          <div>
+            <a href="#">Оферта</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Партнерские пакеты</a>
+          </div>
+        </div>
+    </footer>
+    <script src="owl/jquery-3.7.1.js"></script>
+    <script src="owl/owl.js"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.owl-carousel').owlCarousel();
+      });
+    </script>
+    <script src="js/conf.js"></script>
+  </body>
+</html>
