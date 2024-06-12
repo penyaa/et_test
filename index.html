@@ -742,5 +742,23 @@
       });
     </script>
     <script src="js/index.js"></script>
+    
+    <script>
+       console.log('Скрипт загружен');
+      fetch('https://evtoday.ru/event/', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Успех:', data);
+        // Обработка успешного ответа
+      })
+      .catch(error => {
+        console.error('Ошибка:', error);
+      });
+    </script>
   </body>
 </html>

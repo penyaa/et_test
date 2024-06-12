@@ -13,7 +13,7 @@
         <div class="main__logo">
           <a href="index.html"><img src="assets/logo/logo.png" alt="logo" /></a>
         </div>
-        <div class="main__links">
+        <div id="navbar" class="main__links">
           <ul class="">
             <li><a href="index.html">Календарь</a></li>
             <li><a href="tickets.html">Билеты</a></li>
@@ -40,47 +40,39 @@
             <li><a class="menu-item" href="partner.html">Партнерам</a></li>
           </ul>
         </div>
-        <div id="myModal" class="modal">
+        <!-- <div id="myModal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
             <div class="registration__form">
               <div class="registration__form-title">
                 <h2>Регистрация</h2>
               </div>
-              <form>
+              <form id = "registration_Form">
                 <div class="registration__form-input">
                   <div>
-                    <input type="text" placeholder="Фамилия" />
+                    <input type="text" id="lastName" placeholder="Фамилия" required />
                   </div>
                   <div>
-                    <input type="text" placeholder="Имя" />
+                    <input type="text" id="firstName" placeholder="Имя" required />
                   </div>
                   <div>
-                    <input type="text" placeholder="Адрес электронной почты" />
+                    <input type="email" id="email" placeholder="Адрес электронной почты" required />
                   </div>
                   <div class="registration__form-input-tel">
                     <label for="reg-tel">Номер телефона</label>
-                    <input
-                      id="reg-tel"
-                      type="tel"
-                      placeholder="+7 777 777 77 77"
-                    />
+                    <input id="phone" type="tel" placeholder="+7 777 777 77 77" required />
                   </div>
                   <div class="signin__form-input-password">
-                    <input
-                      class="sign-password"
-                      type="password"
-                      placeholder="Пароль"
-                    />
+                    <input id="password" class="sign-password" type="password" placeholder="Пароль" required />
                   </div>
                 </div>
                 <div class="registration__form-btn">
-                  <button>Завершить</button>
+                  <button id="registrationForm" type="submit">Завершить</button>
                 </div>
               </form>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
     </header>
 
@@ -90,33 +82,30 @@
           <div class="registration__form-title">
             <h2>Регистрация</h2>
           </div>
-          <form>
+          <form id = "registration_Form">
             <div class="registration__form-input">
               <div>
-                <input type="text" placeholder="Фамилия" />
+                <input type="text" id="name" placeholder="Имя" required />
               </div>
               <div>
-                <input type="text" placeholder="Имя" />
+                <input type="text" id="surname" placeholder="Фамилия" required />
               </div>
               <div>
-                <input type="text" placeholder="Адрес электронной почты" />
+                <input type="text" id="email" placeholder="Адрес электронной почты" required/>
               </div>
               <div class="registration__form-input-tel">
                 <label for="reg-tel">Номер телефона</label>
-                <input id="reg-tel" type="tel" placeholder="+7 777 777 77 77" />
+                <input id="phone_number" type="tel" placeholder="+7 777 777 77 77" required/>
               </div>
               <div class="signin__form-input-password">
-                <input
-                  class="sign-password"
-                  type="password"
-                  placeholder="Пароль"
-                />
+                <input id="password" class="sign-password" type="password" placeholder="Пароль" required/>
               </div>
             </div>
             <div class="registration__form-btn">
               <button>Завершить</button>
             </div>
           </form>
+          <div id="result"></div>
           <div class="registration__form-signin">
             <p>
               Уже зарегистрированы?
@@ -131,13 +120,14 @@
           <div class="signin__form-title">
             <h2>Войти в личный кабинет</h2>
           </div>
-          <form class="sign-in">
+          <form id="login_form" class="sign-in">
             <div class="signin__form-input">
               <div class="signin__form-input-email">
-                <input class="sign-name" type="text" placeholder="Адрес электронной почты" />
+                <input id="email_login" class="sign-name" type="text" placeholder="Адрес электронной почты" />
               </div>
               <div class="signin__form-input-password">
                 <input
+                  id="password_login"
                   class="sign-password"
                   type="password"
                   placeholder="Пароль"
@@ -148,6 +138,7 @@
               <button class="signin-btn">Войти</button>
             </div>
           </form>
+          <div id="loginResult"></div>
           <div class="signin__form-reg">
             <button class="signin__form-reg-btn">Зарегистрироваться</button>
           </div>
