@@ -55,7 +55,7 @@ document.getElementById('registration_Form').addEventListener('submit', async fu
     const data = { name, surname, email, phone_number, password };
     
     try {
-        const response = await fetch('https://evtoday.ru/registration', {
+        const response = await fetch('https://evtoday.ru/api/registration', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -92,7 +92,7 @@ document.getElementById('login_form').addEventListener('submit', async function(
   console.log('Login data:', data.toString());
   
   try {
-    const response = await fetch('https://evtoday.ru/login', {
+    const response = await fetch('https://evtoday.ru/api/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -126,7 +126,7 @@ async function checkSession() {
   }
   
   try {
-      const response = await fetch('https://evtoday.ru/session', {
+      const response = await fetch('https://evtoday.ru/api/session', {
           headers: {
               'Authorization': 'Bearer ' + token
           }

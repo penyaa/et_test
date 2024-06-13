@@ -40,23 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
     '.date7',
   ];
 
-
-  document.addEventListener('DOMContentLoaded', function () {
-        console.log('asdas');
-        fetch('http://127.0.0.1:8000/event/', {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Успех:', data);
-      // Обработка успешного ответа
-    });
-
-  });
-
   dates.forEach((date, index) => {
     document.querySelector(date).addEventListener('click', function () {
       texts.forEach((text) => {
